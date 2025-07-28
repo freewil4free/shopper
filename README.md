@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermarket Product Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            cursor: pointer;
+        }
+        th:hover {
+            background-color: #e6e6e6;
+        }
+        .search-container {
+            margin-bottom: 20px;
+        }
+        .sort-icon {
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Supermarket Product Data</h1>
+    
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search by Product Title..." onkeyup="searchTable()">
+    </div>
+    
+    <table id="productTable">
+        <thead>
+            <tr>
+                <th onclick="sortTable(0)">Supermarket <span class="sort-icon">↕</span></th>
+                <th onclick="sortTable(1)">Category <span class="sort-icon">↕</span></th>
+                <th onclick="sortTable(2)">Product Title <span class="sort-icon">↕</span></th>
+                <th onclick="sortTable(3)">Product Price ($) <span class="sort-icon">↕</span></th>
+                <th onclick="sortTable(4)">Base Price ($) <span class="sort-icon">↕</span></th>
+                <th onclick="sortTable(5)">Per unit <span class="sort-icon">↕</span></th>
+                <th>Product URL</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            <!-- Rows will be populated by load_data.js -->
+        </tbody>
+    </table>
+
+    <script src="load_data.js"></script>
+    <script>
+        // Search function
+        function searchTable() {
+            const input = document.getElementById("searchInput");
+            const filter = input.value.toUpperCase();
+            const table = document.getElementById("tableBody");
+            const rows = table.getElementsByTagName("tr");
+
+            for (let i = 0; i < rows.length; i++) {
+                const cells = rows[i].getElementsByTagName("td");
+                let shouldShow = false;
+                
+                // Search across multiple columns (Supermarket, Category, Product Title)
+                for (let j = 0; j < 3; j++) {
+                    if (cells[j]) {
+                        const txtValue = cells[j].textContent || cells[j].innerText;
+                        if (txtValue.toUpperCase().includes(filter)) {
+                            shouldShow = true;
+                            break;
+                        }
+                    }
+                }
+                
+                rows[i].style.display = shouldShow ? "" : "none";
+            }
+        }
+
+        // Sort function
+        function sortTable(columnIndex) {
+            const table = document.getElementById("tableBody");
+            const rows = Array.from(table.getElementsByTagName("tr"));
+            let sortDirection = table.dataset.sortDirection || "asc";
+            let sortColumn = table.dataset.sortColumn || -1;
+            
+            // Toggle direction if clicking same column
+            if (columnIndex === parseInt(sortColumn)) {
+                sortDirection = sortDirection === "asc" ? "desc" : "asc";
+            } else {
+                sortDirection = "asc";
+            }
+            
+            // Store current sort state
+            table.dataset.sortDirection = sortDirection;
+            table.dataset.sortColumn = columnIndex;
+            
+            // Sort rows
+            rows.sort((a, b) => {
+                const aCell = a.getElementsByTagName("td")[columnIndex];
+                const bCell = b.getElementsByTagName("td")[columnIndex];
+                const aValue = aCell ? aCell.textContent.trim() : "";
+                const bValue = bCell ? bCell.textContent.trim() : "";
+                
+                // Numeric comparison for price columns (index 3,4,5)
+                if ([3,4,5].includes(columnIndex)) {
+                    const aNum = parseFloat(aValue.replace(/[^0-9.-]/g, ''));
+                    const bNum = parseFloat(bValue.replace(/[^0-9.-]/g, ''));
+                    return sortDirection === "asc" ? aNum - bNum : bNum - aNum;
+                }
+                
+                // String comparison for other columns
+                return sortDirection === "asc"
+                    ? aValue.localeCompare(bValue)
+                    : bValue.localeCompare(aValue);
+            });
+            
+            // Update table with sorted rows
+            rows.forEach(row => table.appendChild(row));
+            
+            // Update sort indicators
+            updateSortIndicators(columnIndex, sortDirection);
+        }
+        
+        function updateSortIndicators(columnIndex, direction) {
+            const headers = document.querySelectorAll('th span.sort-icon');
+            headers.forEach(span => span.textContent = '↕');
+            
+            const activeHeader = document.querySelector(`th:nth-child(${columnIndex + 1}) span.sort-icon`);
+            if (activeHeader) {
+                activeHeader.textContent = direction === "asc" ? "↑" : "↓";
+            }
+        }
+
+        function isNumeric(str) {
+            return !isNaN(str) && !isNaN(parseFloat(str));
+        }
+
+        // Initialize table when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add click handlers to headers
+            const headers = document.querySelectorAll('#productTable th');
+            headers.forEach((header, index) => {
+                if (index < 6) { // Only make sortable columns clickable
+                    header.style.cursor = 'pointer';
+                    header.addEventListener('click', () => sortTable(index));
+                }
+            });
+
+            // Add debounce to search input
+            const searchInput = document.getElementById('searchInput');
+            let searchTimeout;
+            searchInput.addEventListener('input', () => {
+                clearTimeout(searchTimeout);
+                searchTimeout = setTimeout(searchTable, 300);
+            });
+
+            // Initialize table with data
+            loadCSVData();
+        });
+
+        // Helper function to reset search and sorting
+        function resetTableFilters() {
+            document.getElementById('searchInput').value = '';
+            document.querySelectorAll('#tableBody tr').forEach(tr => {
+                tr.style.display = '';
+            });
+            updateSortIndicators(-1, 'asc');
+        }
+    </script>
+</body>
+</html>
