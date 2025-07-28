@@ -44,12 +44,12 @@
     <table id="productTable">
         <thead>
             <tr>
-                <th onclick="sortTable(0)">Supermarket <span class="sort-icon">↕</span></th>
-                <th onclick="sortTable(1)">Category <span class="sort-icon">↕</span></th>
-                <th onclick="sortTable(2)">Product Title <span class="sort-icon">↕</span></th>
-                <th onclick="sortTable(3)">Product Price ($) <span class="sort-icon">↕</span></th>
-                <th onclick="sortTable(4)">Base Price ($) <span class="sort-icon">↕</span></th>
-                <th onclick="sortTable(5)">Per unit <span class="sort-icon">↕</span></th>
+                <th>Supermarket <span class="sort-icon">↕</span></th>
+                <th>Category <span class="sort-icon">↕</span></th>
+                <th>Product Title <span class="sort-icon">↕</span></th>
+                <th>Product Price ($) <span class="sort-icon">↕</span></th>
+                <th>Base Price ($) <span class="sort-icon">↕</span></th>
+                <th>Per unit <span class="sort-icon">↕</span></th>
                 <th>Product URL</th>
             </tr>
         </thead>
@@ -92,13 +92,17 @@
             const rows = Array.from(table.getElementsByTagName("tr"));
             let sortDirection = table.dataset.sortDirection || "asc";
             let sortColumn = table.dataset.sortColumn || -1;
-            
+
+            console.log(`Before toggle: column=${sortColumn}, direction=${sortDirection}`);
+
             // Toggle direction if clicking same column
             if (columnIndex === parseInt(sortColumn)) {
                 sortDirection = sortDirection === "asc" ? "desc" : "asc";
             } else {
                 sortDirection = "asc";
             }
+
+            console.log(`After toggle: column=${sortColumn}, direction=${sortDirection}`);
             
             // Store current sort state
             table.dataset.sortDirection = sortDirection;
