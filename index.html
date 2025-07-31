@@ -29,6 +29,9 @@
         .search-container {
             margin-bottom: 20px;
         }
+        .category-container {
+            margin-bottom: 20px
+        }
         .sort-icon {
             margin-left: 5px;
         }
@@ -38,9 +41,18 @@
     <h1>Supermarket Product Data</h1>
     
     <div class="search-container">
-        <input type="text" id="searchInput" placeholder="Search by Product Title..." onkeyup="searchTable()">
+        <input type="text" id="searchInput" placeholder="Search by Product Title...">
+        <button id="searchbutton" onclick="loadandfind()">Search</button>
+
     </div>
     
+    <div class="category-container">
+        <label for="categoryFilter">Filter by Category:</label>
+        <select id="categoryFilter">
+            <option value="all">All Categories</option>
+        </select>
+    </div>
+
     <table id="productTable">
         <thead>
             <tr>
@@ -58,10 +70,37 @@
         </tbody>
     </table>
 
-    <script src="load_data.js"></script>
     <script>
+        async function loadandfind() {
+            try {
+                await loadDataScript();
+                await loadCSVData(); // Only if this is async, otherwise remove 'await'
+                searchTable();
+            } catch (err) {
+                console.error("Failed to load and search:", err);
+            }
+        }
+
+        function loadDataScript() {
+            return new Promise((resolve, reject) => {
+                const script = document.createElement('script');
+                script.src = "load_data.js";
+                script.onload = () => {
+                    console.log('load_data.js loaded');
+                    resolve();
+                };
+                script.onerror = () => {
+                    reject(new Error("Failed to load load_data.js"));
+                };
+                document.head.appendChild(script);
+            });
+        }
+    </script>
+    <script>
+
         // Search function
         function searchTable() {
+            console.log('beginning search')
             const input = document.getElementById("searchInput");
             const filter = input.value.toUpperCase();
             const table = document.getElementById("tableBody");
@@ -84,6 +123,7 @@
                 
                 rows[i].style.display = shouldShow ? "" : "none";
             }
+            console.log('Searched table');
         }
 
         // Sort function
@@ -160,16 +200,19 @@
                 }
             });
 
-            // Add debounce to search input
-            const searchInput = document.getElementById('searchInput');
-            let searchTimeout;
-            searchInput.addEventListener('input', () => {
-                clearTimeout(searchTimeout);
-                searchTimeout = setTimeout(searchTable, 300);
+            // Add debounce to search input (i.e. immediately start searching after input value changes)
+            //const searchInput = document.getElementById('searchInput');
+            //let searchTimeout;
+            //searchInput.addEventListener('input', () => {
+               // clearTimeout(searchTimeout);
+               // searchTimeout = setTimeout(searchTable, 300);
+            //});
+            document.getElementById('searchInput').addEventListener('keydown', function (event) {
+                if (event.key === 'Enter') {
+                    event.preventDefault(); // prevent form submission if inside a form
+                    loadandfind(); // triggers load_data + search
+                }
             });
-
-            // Initialize table with data
-            loadCSVData();
         });
 
         // Helper function to reset search and sorting
@@ -180,6 +223,28 @@
             });
             updateSortIndicators(-1, 'asc');
         }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const observer = new MutationObserver(function () {
+                const table = document.getElementById("tableBody");
+                const rows = table.getElementsByTagName("tr");
+                const categories = new Set();
+
+                for (let row of rows) {
+                    const cells = row.getElementsByTagName("td");
+                    if (cells[1]) {
+                        categories.add(cells[1].textContent.trim());
+                    }
+                }
+
+                console.log("Unique Categories:", Array.from(categories));
+                observer.disconnect(); // Only run once
+            });
+
+            const tableBody = document.getElementById("tableBody");
+            observer.observe(tableBody, { childList: true });
+        });
+
     </script>
 </body>
 </html>
