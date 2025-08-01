@@ -1,7 +1,7 @@
 Supermarket,Category,Product Title,Product Price,Base Price,Per unit,Product URL
-Woolworths,Fish,Cooke Seafood Smoked Salmon 100g,8.0,80.0,1KG,https://www.woolworths.com.au/shop/productdetails/804567/cooke-seafood-smoked-salmon
+Woolworths,Meat and Seafood,Cooke Seafood Smoked Salmon 100g,8.0,80.0,1KG,https://www.woolworths.com.au/shop/productdetails/804567/cooke-seafood-smoked-salmon
 Woolworths,Meat and Seafood,Woolworths RSPCA Approved Chicken Breast Fillet Min. 300g per kg,12.0,12.0,1KG,https://www.woolworths.com.au/shop/productdetails/25734/woolworths-rspca-approved-chicken-breast-fillet-min-300g
-Woolworths,Beef,Woolworths Heart Smart Extra Lean Beef Mince 500g,10.0,20.0,1KG,https://www.woolworths.com.au/shop/productdetails/577860/woolworths-heart-smart-extra-lean-beef-mince
+Woolworths,Meat and Seafood,Woolworths Heart Smart Extra Lean Beef Mince 500g,10.0,20.0,1KG,https://www.woolworths.com.au/shop/productdetails/577860/woolworths-heart-smart-extra-lean-beef-mince
 Woolworths,Meat and Seafood,Woolworths RSPCA Approved Chicken Thigh Fillet per kg,15.0,15.0,1KG,https://www.woolworths.com.au/shop/productdetails/77038/woolworths-rspca-approved-chicken-thigh-fillet
 Woolworths,Meat and Seafood,Champagne Leg Ham Shaved From The Deli Per Kg,23.5,23.5,1KG,https://www.woolworths.com.au/shop/productdetails/129693/champagne-leg-ham-shaved-from-the-deli
 Woolworths,Meat and Seafood,Woolworths Lean Beef Mince 1kg,16.0,16.0,1KG,https://www.woolworths.com.au/shop/productdetails/577862/woolworths-lean-beef-mince
@@ -441,7 +441,7 @@ Woolworths,Meat and Seafood,Agrios Wild Whole Banana Prawns 1kg,22.0,22.0,1KG,ht
 Woolworths,Meat and Seafood,Moira Mac's Fast Feasts Chicken Bites Honey Sauce 350g,8.5,24.29,1KG,https://www.woolworths.com.au/shop/productdetails/6022506/moira-mac-s-fast-feasts-chicken-bites-honey-sauce
 Woolworths,Meat and Seafood,Ocean Chef Australian Raw Peeled Prawns 400g,21.0,52.5,1KG,https://www.woolworths.com.au/shop/productdetails/247602/ocean-chef-australian-raw-peeled-prawns
 Woolworths,Meat and Seafood,Petuna Atlantic Salmon Fillets 800g,32.0,40.0,1KG,https://www.woolworths.com.au/shop/productdetails/95875/petuna-atlantic-salmon-fillets
-Woolworths,Meat and Seafood,"Birds Eye Ocean Selections Raw Prawns Frozen, Peeled & Tail Off 500g",19.0,38.0,1KG,https://www.woolworths.com.au/shop/productdetails/186658/birds-eye-ocean-selections-raw-prawns-frozen-peeled-tail-off
+Woolworths,Meat and Seafood,Birds Eye Ocean Selections Raw Prawns Frozen Peeled & Tail Off 500g,19.0,38.0,1KG,https://www.woolworths.com.au/shop/productdetails/186658/birds-eye-ocean-selections-raw-prawns-frozen-peeled-tail-off
 Woolworths,Meat and Seafood,Agrios Wild Banana Prawn Meat Tail Off 500g,23.0,46.0,1KG,https://www.woolworths.com.au/shop/productdetails/6029327/agrios-wild-banana-prawn-meat-tail-off
 Woolworths,Meat and Seafood,Bertocchi Authentic Leg Ham Boneless 500g - 1kg,24.5,24.5,1KG,https://www.woolworths.com.au/shop/productdetails/255174/bertocchi-authentic-leg-ham-boneless
 Woolworths,Meat and Seafood,Woolworths Cooked & Peeled Cocktail Prawns Tail On Per Kg,34.0,34.0,1KG,https://www.woolworths.com.au/shop/productdetails/218146/woolworths-cooked-peeled-cocktail-prawns-tail-on
@@ -465,7 +465,7 @@ Woolworths,Meat and Seafood,Prawn Cocktail Cooked Tail On Thawed Per Kg,34.0,34.
 Woolworths,Meat and Seafood,Tassal Smoked Tassie Salmon 50g x 2 pack,12.5,125.0,1KG,https://www.woolworths.com.au/shop/productdetails/247015/tassal-smoked-tassie-salmon
 Woolworths,Meat and Seafood,Crystal Bay Australian Tiger Prawns 1kg,33.0,33.0,1KG,https://www.woolworths.com.au/shop/productdetails/102083/crystal-bay-australian-tiger-prawns
 Woolworths,Meat and Seafood,Hans Shortcut Bacon 1kg,15.0,15.0,1KG,https://www.woolworths.com.au/shop/productdetails/6034158/hans-shortcut-bacon
-Woolworths,Meat and Seafood,"Birds Eye Ocean Selections Raw Prawns Frozen, Garlic And Herb Dusted 500g",19.0,38.0,1KG,https://www.woolworths.com.au/shop/productdetails/246721/birds-eye-ocean-selections-raw-prawns-frozen-garlic-and-herb-dusted
+Woolworths,Meat and Seafood,Birds Eye Ocean Selections Raw Prawns Frozen Garlic And Herb Dusted 500g,19.0,38.0,1KG,https://www.woolworths.com.au/shop/productdetails/246721/birds-eye-ocean-selections-raw-prawns-frozen-garlic-and-herb-dusted
 Woolworths,Meat and Seafood,Gourmet Chef Thai Red Curry Sauce 450g,5.2,11.56,1KG,https://www.woolworths.com.au/shop/productdetails/66289/gourmet-chef-thai-red-curry-sauce
 Woolworths,Meat and Seafood,Barossa Fine Foods Fine Foods Schulz Bacon 200g,7.25,36.25,1KG,https://www.woolworths.com.au/shop/productdetails/810867/barossa-fine-foods-fine-foods-schulz-bacon
 Woolworths,Meat and Seafood,Barossa Fine Foods Italian Mild Sausages 480g,9.5,19.79,1KG,https://www.woolworths.com.au/shop/productdetails/286370/barossa-fine-foods-italian-mild-sausages
@@ -814,7 +814,7 @@ Coles,Meat and Seafood,The Bare Bird Chicken Thigh Fillets | 480g,13.5,28.13,1kg
 Coles,Meat and Seafood,Coles RSPCA Approved Chicken Mixed Portions Southern Fried | 1.2kg,15.5,12.92,1kg,https://www.coles.com.au/product/coles-rspca-approved-chicken-mixed-portions-southern-fried-1.2kg-7382540
 Coles,Meat and Seafood,Coles Pork Ribs Sticky Sticky American Bbq Glaze | approx. 1kg,22.0,22.0,1kg,https://www.coles.com.au/product/coles-pork-ribs-sticky-sticky-american-bbq-glaze-approx.-1kg-7414249
 Coles,Meat and Seafood,El-amin's Lamb Shoulder Roast On The Bone | approx. 2.2kg,30.8,14.0,1kg,https://www.coles.com.au/product/el-amin's-lamb-shoulder-roast-on-the-bone-approx.-2.2kg-7436467
-Coles,Burgers,El-Amin's Burgers | 500g,8.0,16.0,1kg,https://www.coles.com.au/product/el-amin's-burgers-500g-7437335
+Coles,Meat and Seafood,El-Amin's Burgers | 500g,8.0,16.0,1kg,https://www.coles.com.au/product/el-amin's-burgers-500g-7437335
 Coles,Meat and Seafood,El-Amin's Lamb Shawarma | 500g,13.0,26.0,1kg,https://www.coles.com.au/product/el-amin's-lamb-shawarma-500g-7437426
 Coles,Meat and Seafood,Coles Made Easy Slow Cooked Pork Ribs In Bbq Sauce | 650g,14.5,22.31,1kg,https://www.coles.com.au/product/coles-made-easy-slow-cooked-pork-ribs-in-bbq-sauce-650g-7438338
 Coles,Meat and Seafood,Fettayleh Wagyu Beef Salami | 100g,10.0,100.0,1kg,https://www.coles.com.au/product/fettayleh-wagyu-beef-salami-100g-7510184
@@ -893,24 +893,24 @@ Coles,Meat and Seafood,Coles Lamb Loin Chops | approx. 500g,15.5,31.0,1kg,https:
 Coles,Meat and Seafood,Coles Beef Diced | 500g,12.0,24.0,1kg,https://www.coles.com.au/product/coles-beef-diced-500g-9989977
 Coles,Meat and Seafood,Coles Beef Stir Fry | 500g,10.5,21.0,1kg,https://www.coles.com.au/product/coles-beef-stir-fry-500g-9990965
 Aldi,Meat and Seafood,THE FISHMONGER Smoked Salmon 200g,9.99,49.95,1KG,https://www.aldi.com.au/product/the-fishmonger-smoked-salmon-200g-000000000000304580
-Aldi,Meat and Seafood,"READY, SET…COOK! Wagyu Beef Burgers 400g",8.99,22.48,1KG,https://www.aldi.com.au/product/ready-set-cook-wagyu-burgers-400g-000000000000398515
-Aldi,Meat and Seafood,"SPECIALLY SELECTED Pork, Pepper and Oregano Gourmet Sausages 500g",7.99,15.98,1KG,https://www.aldi.com.au/product/specially-selected-pork-pepper-and-oregano-gourmet-sausages-500g-000000000000398596
-Aldi,Meat and Seafood,"SPECIALLY SELECTED Chicken, Fetta & Parsley Sausages 500g",7.99,15.98,1KG,https://www.aldi.com.au/product/specially-selected-chicken-riverina-fetta-parsley-gourmet-sausages-500g-000000000000398597
+Aldi,Meat and Seafood,READY SET…COOK! Wagyu Beef Burgers 400g,8.99,22.48,1KG,https://www.aldi.com.au/product/ready-set-cook-wagyu-burgers-400g-000000000000398515
+Aldi,Meat and Seafood,SPECIALLY SELECTED Pork Pepper and Oregano Gourmet Sausages 500g,7.99,15.98,1KG,https://www.aldi.com.au/product/specially-selected-pork-pepper-and-oregano-gourmet-sausages-500g-000000000000398596
+Aldi,Meat and Seafood,SPECIALLY SELECTED Chicken Fetta & Parsley Sausages 500g,7.99,15.98,1KG,https://www.aldi.com.au/product/specially-selected-chicken-riverina-fetta-parsley-gourmet-sausages-500g-000000000000398597
 Aldi,Meat and Seafood,JINDURRA STATION 5 Star Beef Mince 500g,8.99,17.98,1KG,https://www.aldi.com.au/product/jindurra-station-5-star-beef-mince-500g-000000000000398905
 Aldi,Meat and Seafood,IRONBARK PORK Pork Mince 500g,4.69,9.38,1KG,https://www.aldi.com.au/product/ironbark-pork-pork-mince-500g-000000000000398922
 Aldi,Meat and Seafood,JINDURRA STATION Beef Stir Fry,8.92,19.39,1KG,https://www.aldi.com.au/product/jindurra-station-beef-stir-fry-000000000000398941
 Aldi,Meat and Seafood,BROAD OAK FARMS RSPCA Approved Chicken Thigh Bulk,15.03,12.99,1KG,https://www.aldi.com.au/product/broad-oak-farms-chicken-thigh-fillets-bulk-pack-per-kg-000000000000398952
-Aldi,Meat and Seafood,"READY, SET…COOK! Marinated Chicken Roasting Pieces",12.58,6.99,1KG,https://www.aldi.com.au/product/ready-set-cook-marinated-chicken-roasting-pieces-per-kg-000000000000398953
+Aldi,Meat and Seafood,READY SET…COOK! Marinated Chicken Roasting Pieces,12.58,6.99,1KG,https://www.aldi.com.au/product/ready-set-cook-marinated-chicken-roasting-pieces-per-kg-000000000000398953
 Aldi,Meat and Seafood,BROAD OAK FARMS Chicken Drumsticks Bulk Pack 2kg,6.89,3.45,1KG,https://www.aldi.com.au/product/broad-oak-farms-chicken-drumsticks-bulk-pack-2kg-000000000000399018
 Aldi,Meat and Seafood,JINDURRA STATION 3 Star Beef Mince 500g,6.49,12.98,1KG,https://www.aldi.com.au/product/jindurra-station-3-star-beef-mince-500g-000000000000399119
-Aldi,Meat and Seafood,"READY, SET…COOK! Boneless Chicken Kiev Creamy Garlic 700g",7.29,10.41,1KG,https://www.aldi.com.au/product/ready-set-cook-boneless-chicken-kiev-creamy-garlic-700g-000000000000399161
+Aldi,Meat and Seafood,READY SET…COOK! Boneless Chicken Kiev Creamy Garlic 700g,7.29,10.41,1KG,https://www.aldi.com.au/product/ready-set-cook-boneless-chicken-kiev-creamy-garlic-700g-000000000000399161
 Aldi,Meat and Seafood,BROAD OAK FARMS RSPCA Approved Chicken Wings Bulk 2kg,8.79,4.4,1KG,https://www.aldi.com.au/product/broad-oak-farms-chicken-wings-bulk-2kg-000000000000399287
 Aldi,Meat and Seafood,JINDURRA STATION Beef Porterhouse Steak,23.48,27.49,1KG,https://www.aldi.com.au/product/jindurra-station-beef-porterhouse-steak-per-kg-000000000000399496
-Aldi,Meat and Seafood,"READY, SET…COOK! Marinated Whole RSPCA Approved Chicken with BBQ Seasoning",12.01,6.49,1KG,https://www.aldi.com.au/product/ready-set-cook-marinated-whole-chicken-with-bbq-seasoning-per-kg-000000000000399525
-Aldi,Meat and Seafood,"READY, SET…COOK! BBQ Pork Scotch Fillet Steak Honey & Pepper 400g",8.99,22.48,1KG,https://www.aldi.com.au/product/ready-set-cook-marinated-pork-scotch-fillet-steak-honey-pepper-400g-000000000000399616
-Aldi,Meat and Seafood,"READY, SET…COOK! Pork and Beef Meatballs 420g",4.79,11.4,1KG,https://www.aldi.com.au/product/ready-set-cook-pork-and-beef-meatballs-420g-000000000000399677
+Aldi,Meat and Seafood,READY SET…COOK! Marinated Whole RSPCA Approved Chicken with BBQ Seasoning,12.01,6.49,1KG,https://www.aldi.com.au/product/ready-set-cook-marinated-whole-chicken-with-bbq-seasoning-per-kg-000000000000399525
+Aldi,Meat and Seafood,READY SET…COOK! BBQ Pork Scotch Fillet Steak Honey & Pepper 400g,8.99,22.48,1KG,https://www.aldi.com.au/product/ready-set-cook-marinated-pork-scotch-fillet-steak-honey-pepper-400g-000000000000399616
+Aldi,Meat and Seafood,READY SET…COOK! Pork and Beef Meatballs 420g,4.79,11.4,1KG,https://www.aldi.com.au/product/ready-set-cook-pork-and-beef-meatballs-420g-000000000000399677
 Aldi,Meat and Seafood,BROAD OAK FARMS RSPCA Approved Chicken Breast Stir Fry,7.43,13.49,1KG,https://www.aldi.com.au/product/broad-oak-farms-chicken-breast-stir-fry-per-kg-000000000000399698
-Aldi,Meat and Seafood,"READY, SET…COOK! Corned Beef Silverside",13.77,9.19,1KG,https://www.aldi.com.au/product/ready-set-cook-corned-beef-silverside-per-kg-000000000000399712
+Aldi,Meat and Seafood,READY SET…COOK! Corned Beef Silverside,13.77,9.19,1KG,https://www.aldi.com.au/product/ready-set-cook-corned-beef-silverside-per-kg-000000000000399712
 Aldi,Meat and Seafood,BROAD OAK FARMS RSPCA Approved Chicken Breast Fillets Bulk Pack,13.1,9.49,1KG,https://www.aldi.com.au/product/broad-oak-farms-chicken-breast-fillets-bulk-pack-per-kg-000000000000399727
 Aldi,Meat and Seafood,IRONBARK PORK Pork Leg Roast Boneless,17.98,8.99,1KG,https://www.aldi.com.au/product/ironbark-pork-boneless-pork-leg-roast-per-kg-000000000000399756
 Aldi,Meat and Seafood,JINDURRA STATION Gravy Beef,10.19,16.99,1KG,https://www.aldi.com.au/product/jindurra-station-gravy-beef-per-kg-000000000000399759
@@ -925,10 +925,10 @@ Aldi,Meat and Seafood,JINDURRA STATION Beef Sizzle Steak,10.8,26.99,1KG,https://
 Aldi,Meat and Seafood,IRONBARK PORK Pork Belly,14.91,16.59,1KG,https://www.aldi.com.au/product/ironbark-pork-pork-belly-per-kg-000000000000399917
 Aldi,Meat and Seafood,KILLARNEE Lamb BBQ Chops,19.99,19.99,1KG,https://www.aldi.com.au/product/killarnee-lamb-bbq-chops-per-kg-000000000000399930
 Aldi,Meat and Seafood,KILLARNEE Lamb Loin Chops,17.97,28.99,1KG,https://www.aldi.com.au/product/killarnee-lamb-bbq-chops-per-kg-000000000000399946
-Aldi,Meat and Seafood,"READY, SET…COOK! Rosemary & Mint Lamb Leg Steaks",15.54,24.99,1KG,https://www.aldi.com.au/product/ready-set-cook-rosemary-mint-lamb-leg-steaks-per-kg-000000000000399973
-Aldi,Meat and Seafood,"READY, SET…COOK! RSPCA Approved Chicken Enchilada 500g",7.99,15.98,1KG,https://www.aldi.com.au/product/ready-set-cook-chicken-enchilada-500g-000000000000400019
+Aldi,Meat and Seafood,READY SET…COOK! Rosemary & Mint Lamb Leg Steaks,15.54,24.99,1KG,https://www.aldi.com.au/product/ready-set-cook-rosemary-mint-lamb-leg-steaks-per-kg-000000000000399973
+Aldi,Meat and Seafood,READY SET…COOK! RSPCA Approved Chicken Enchilada 500g,7.99,15.98,1KG,https://www.aldi.com.au/product/ready-set-cook-chicken-enchilada-500g-000000000000400019
 Aldi,Meat and Seafood,JINDURRA STATION Beef Blade Steak,17.27,17.99,1KG,https://www.aldi.com.au/product/jindurra-station-beef-blade-steak-per-kg-000000000000400023
-Aldi,Meat and Seafood,"READY, SET…COOK! Herb & Lemon Butterflied Pork 1kg",12.59,13.99,1KG,https://www.aldi.com.au/product/ready-set-cook-herb-lemon-butterflied-pork-1kg-000000000000400027
+Aldi,Meat and Seafood,READY SET…COOK! Herb & Lemon Butterflied Pork 1kg,12.59,13.99,1KG,https://www.aldi.com.au/product/ready-set-cook-herb-lemon-butterflied-pork-1kg-000000000000400027
 Aldi,Meat and Seafood,JINDURRA STATION Beef Scotch Fillet Steak,30.04,31.99,1KG,https://www.aldi.com.au/product/jindurra-station-beef-scotch-fillet-steak-per-kg-000000000000400053
 Aldi,Meat and Seafood,BROAD OAK FARMS RSPCA Approved Chicken Breast Diced,10.79,13.49,1KG,https://www.aldi.com.au/product/broad-oak-farms-diced-chicken-breast-per-kg-000000000000400085
 Aldi,Meat and Seafood,IRONBARK PORK Pork Ribs,15.19,18.99,1KG,https://www.aldi.com.au/product/ironbark-pork-pork-ribs-per-kg-000000000000400091
@@ -936,84 +936,84 @@ Aldi,Meat and Seafood,JINDURRA STATION Beef Porterhouse Steak 200g,7.0,35.0,1KG,
 Aldi,Meat and Seafood,IRONBARK PORK Lightly Infused Pork Loin Steak,7.95,17.99,1KG,https://www.aldi.com.au/product/ironbark-pork-lightly-infused-pork-loin-steak-per-kg-000000000000400114
 Aldi,Meat and Seafood,JINDURRA STATION Beef Eye Fillet,29.51,35.99,1KG,https://www.aldi.com.au/product/jindurra-station-beef-eye-fillet-per-kg-000000000000400168
 Aldi,Meat and Seafood,JINDURRA STATION Beef Scotch Fillet Steak 170g,8.0,47.06,1KG,https://www.aldi.com.au/product/jindurra-station-beef-scotch-fillet-steak-170g-000000000000400202
-Aldi,Meat and Seafood,"READY, SET…COOK! Honey & Rosemary Butterflied Lamb Leg",23.09,20.99,1KG,https://www.aldi.com.au/product/ready-set-cook-honey-rosemary-butterflied-lamb-leg-per-kg-000000000000400218
+Aldi,Meat and Seafood,READY SET…COOK! Honey & Rosemary Butterflied Lamb Leg,23.09,20.99,1KG,https://www.aldi.com.au/product/ready-set-cook-honey-rosemary-butterflied-lamb-leg-per-kg-000000000000400218
 Aldi,Meat and Seafood,JINDURRA STATION Beef T-Bone Steak,9.96,29.99,1KG,https://www.aldi.com.au/product/jindurra-station-beef-t-bone-steak-per-kg-000000000000400229
 Aldi,Meat and Seafood,RIVER COUNTRY VEAL Veal Schnitzel,13.5,29.99,1KG,https://www.aldi.com.au/product/river-country-veal-veal-schnitzel-000000000000400230
 Aldi,Meat and Seafood,KILLARNEE Half Lamb Leg Bone In,18.74,12.49,1KG,https://www.aldi.com.au/product/killarnee-half-lamb-leg-bone-in-per-kg-000000000000400247
 Aldi,Meat and Seafood,SPECIALLY SELECTED Grass Fed Angus Beef Sausages 500g,7.99,15.98,1KG,https://www.aldi.com.au/product/specially-selected-grass-fed-angus-beef-garlic-sausages-500g-000000000000400267
-Aldi,Meat and Seafood,"READY, SET…COOK! Marinated Honey Soy RSPCA Approved Chicken Drumsticks 1.5kg",8.99,5.99,1KG,https://www.aldi.com.au/product/ready-set-cook-marinated-chicken-drumsticks-honey-soy-1-5kg-000000000000400358
+Aldi,Meat and Seafood,READY SET…COOK! Marinated Honey Soy RSPCA Approved Chicken Drumsticks 1.5kg,8.99,5.99,1KG,https://www.aldi.com.au/product/ready-set-cook-marinated-chicken-drumsticks-honey-soy-1-5kg-000000000000400358
 Aldi,Meat and Seafood,THE FISHMONGER Melt in the Middle Fish Cakes Salmon & Hollandaise 2 Pack 290g,5.49,18.93,1KG,https://www.aldi.com.au/product/the-fishmonger-melt-in-the-middle-fish-cakes-salmon-hollandaise-2-pack-290g-000000000000400666
 Aldi,Meat and Seafood,THE FISHMONGER Cooked Prawn Cutlets with Cocktail Sauce 230g,8.99,39.09,1KG,https://www.aldi.com.au/product/the-fishmonger-cooked-prawn-cutlets-with-cocktail-sauce-230g-000000000000400752
 Aldi,Meat and Seafood,SPECIALLY SELECTED Wagyu Beef Sausages 500g,7.99,15.98,1KG,https://www.aldi.com.au/product/specially-selected-wagyu-beef-sausages-500g-000000000000400848
-Aldi,Meat and Seafood,"READY, SET…COOK! Free Range Marinated Chicken Breast",9.5,18.99,1KG,https://www.aldi.com.au/product/ready-set-cook-free-range-marinated-chicken-breast-000000000000400862
+Aldi,Meat and Seafood,READY SET…COOK! Free Range Marinated Chicken Breast,9.5,18.99,1KG,https://www.aldi.com.au/product/ready-set-cook-free-range-marinated-chicken-breast-000000000000400862
 Aldi,Meat and Seafood,THE FISHMONGER Fresh Tasmanian Salmon Fillets Skin Off 2 Pack 260g,12.99,49.96,1KG,https://www.aldi.com.au/product/the-fishmonger-fresh-tasmanian-salmon-fillets-skin-off-2-pack-260g-000000000000401066
 Aldi,Meat and Seafood,SPECIALLY SELECTED Beef Eye Fillet Steak Aged 21 Days,15.9,52.99,1KG,https://www.aldi.com.au/product/specially-selected-beef-eye-fillet-steak-per-kg-000000000000401085
 Aldi,Meat and Seafood,SPECIALLY SELECTED Beef Scotch Fillet Aged 21 Days,17.2,42.99,1KG,https://www.aldi.com.au/product/specially-selected-beef-scotch-fillet-per-kg-000000000000401087
 Aldi,Meat and Seafood,JINDURRA STATION Beef Chuck Casserole,16.49,16.49,1KG,https://www.aldi.com.au/product/jindurra-station-beef-chuck-casserole-000000000000401302
-Aldi,Meat and Seafood,"READY, SET…COOK! Southern Style RSPCA Approved Chicken Portions",14.39,11.99,1KG,https://www.aldi.com.au/product/ready-set-cook-southern-style-chicken-portions-per-kg-000000000000401375
+Aldi,Meat and Seafood,READY SET…COOK! Southern Style RSPCA Approved Chicken Portions,14.39,11.99,1KG,https://www.aldi.com.au/product/ready-set-cook-southern-style-chicken-portions-per-kg-000000000000401375
 Aldi,Meat and Seafood,BROAD OAK FARMS RSPCA Approved Chicken Mince 500g,5.49,10.98,1KG,https://www.aldi.com.au/product/broad-oak-farms-chicken-mince-500g-000000000000401545
 Aldi,Meat and Seafood,BROAD OAK FARMS RSPCA Approved Chicken Thigh Fillets,9.59,15.99,1KG,https://www.aldi.com.au/product/broad-oak-farms-chicken-thigh-fillets-per-kg-000000000000401598
 Aldi,Meat and Seafood,BROAD OAK FARMS RSPCA Approved Chicken Breast Fillets,7.79,12.99,1KG,https://www.aldi.com.au/product/broad-oak-farms-chicken-breast-fillets-per-kg-000000000000401713
 Aldi,Meat and Seafood,BROAD OAK FARMS RSPCA Approved Chicken Tenderloin,8.24,14.99,1KG,https://www.aldi.com.au/product/broad-oak-farms-chicken-tenderloins-per-kg-000000000000401714
 Aldi,Meat and Seafood,THE FISHMONGER Basa Fillets Skin Off 400g,7.49,18.73,1KG,https://www.aldi.com.au/product/the-fishmonger-basa-fillets-skin-off-400g-000000000000401905
 Aldi,Meat and Seafood,BROAD OAK FARMS RSPCA Approved  Chicken Thigh Cutlets Skinless and Bone In,5.19,7.99,1KG,https://www.aldi.com.au/product/broad-oak-farms-chicken-thigh-cutlets-skinless-and-bone-in-per-kg-000000000000402023
-Aldi,Meat and Seafood,"READY, SET…COOK! Herb & Garlic Rissoles 540g",6.69,12.39,1KG,https://www.aldi.com.au/product/ready-set-cook-herb-garlic-rissoles-540g-000000000000402201
+Aldi,Meat and Seafood,READY SET…COOK! Herb & Garlic Rissoles 540g,6.69,12.39,1KG,https://www.aldi.com.au/product/ready-set-cook-herb-garlic-rissoles-540g-000000000000402201
 Aldi,Meat and Seafood,SPECIALLY SELECTED Wagyu Meatballs 420g,7.99,19.02,1KG,https://www.aldi.com.au/product/specially-selected-wagyu-meatballs-420g-000000000000402570
 Aldi,Meat and Seafood,JINDURRA STATION Beef Rump Steak 250g,7.0,28.0,1KG,https://www.aldi.com.au/product/jindurra-station-beef-rump-steak-250g-000000000000402668
 Aldi,Meat and Seafood,IRONBARK PORK Boneless Pork Loin Roast,21.74,14.49,1KG,https://www.aldi.com.au/product/ironbark-pork-boneless-pork-loin-roast-per-kg-000000000000402950
-Aldi,Meat and Seafood,"READY, SET…COOK! Maple Miso Pork Fillet",11.96,18.99,1KG,https://www.aldi.com.au/product/ready-set-cook-maple-miso-pork-fillet-000000000000403107
+Aldi,Meat and Seafood,READY SET…COOK! Maple Miso Pork Fillet,11.96,18.99,1KG,https://www.aldi.com.au/product/ready-set-cook-maple-miso-pork-fillet-000000000000403107
 Aldi,Meat and Seafood,THE FISHMONGER Fresh Tasmanian Salmon Fillets Skin Off 4 Pack 460g,17.99,39.11,1KG,https://www.aldi.com.au/product/the-fishmonger-fresh-tasmanian-salmon-fillets-skin-off-460g-pack-000000000000403239
 Aldi,Meat and Seafood,IRONBARK PORK Pork And Beef Mince 500g,5.99,11.98,1KG,https://www.aldi.com.au/product/ironbark-pork-pork-and-beef-mince-500g-000000000000403246
 Aldi,Meat and Seafood,KR CASTLEMAINE EST. 1911 Pork Fillet Wrapped in Prosciutto,14.99,24.99,1KG,https://www.aldi.com.au/product/kr-castlemaine-est-1911-pork-fillet-wrapped-in-prosciutto-000000000000403273
-Aldi,Meat and Seafood,"READY, SET…COOK! Prosciutto Wrapped RSPCA Approved Chicken Breast Parmigiana 2 Pack 500g",9.99,19.98,1KG,https://www.aldi.com.au/product/ready-set-cook-prosciutto-wrapped-chicken-breast-parmigiana-2-pack-500g-000000000000403361
-Aldi,Meat and Seafood,"READY, SET…COOK! RSPCA Approved Chicken Bites With Sriracha  Mayonnaise 500g",9.49,18.98,1KG,https://www.aldi.com.au/product/ready-set-cook-sriracha-chicken-bites-with-mayonnaise-500g-000000000000403367
+Aldi,Meat and Seafood,READY SET…COOK! Prosciutto Wrapped RSPCA Approved Chicken Breast Parmigiana 2 Pack 500g,9.99,19.98,1KG,https://www.aldi.com.au/product/ready-set-cook-prosciutto-wrapped-chicken-breast-parmigiana-2-pack-500g-000000000000403361
+Aldi,Meat and Seafood,READY SET…COOK! RSPCA Approved Chicken Bites With Sriracha  Mayonnaise 500g,9.49,18.98,1KG,https://www.aldi.com.au/product/ready-set-cook-sriracha-chicken-bites-with-mayonnaise-500g-000000000000403367
 Aldi,Meat and Seafood,THE FISHMONGER Fresh Tasmanian Salmon Lemon & Herb Crumb 4 Pack 500g,17.99,35.98,1KG,https://www.aldi.com.au/product/the-fishmonger-fresh-tasmanian-salmon-lemon-herb-crumb-4-pack-500g-000000000000403597
 Aldi,Meat and Seafood,BROAD OAK FARMS RSPCA Approved Chicken Necks 1kg,5.99,5.99,1KG,https://www.aldi.com.au/product/broad-oak-farms-chicken-necks-1kg-000000000000403748
-Aldi,Meat and Seafood,"READY, SET…COOK! Free Range Boneless Butterflied Chicken",15.2,12.99,1KG,https://www.aldi.com.au/product/ready-set-cook-free-range-boneless-butterflied-chicken-per-kg-000000000000403763
-Aldi,Meat and Seafood,"READY, SET…COOK! Free Range Chicken Breast Schnitzel 4 Pack 420g",7.99,19.02,1KG,https://www.aldi.com.au/product/ready-set-cook-free-range-chicken-breast-schnitzel-4-pack-420g-000000000000403936
+Aldi,Meat and Seafood,READY SET…COOK! Free Range Boneless Butterflied Chicken,15.2,12.99,1KG,https://www.aldi.com.au/product/ready-set-cook-free-range-boneless-butterflied-chicken-per-kg-000000000000403763
+Aldi,Meat and Seafood,READY SET…COOK! Free Range Chicken Breast Schnitzel 4 Pack 420g,7.99,19.02,1KG,https://www.aldi.com.au/product/ready-set-cook-free-range-chicken-breast-schnitzel-4-pack-420g-000000000000403936
 Aldi,Meat and Seafood,JINDURRA STATION Beef Rump Roast,23.99,23.99,1KG,https://www.aldi.com.au/product/jindurra-station-beef-rump-roast-000000000000405212
 Aldi,Meat and Seafood,BROAD OAK FARMS Fresh Whole RSPCA Approved Chicken,6.74,3.99,1KG,https://www.aldi.com.au/product/broad-oak-farms-fresh-whole-chicken-per-kg-000000000000405544
-Aldi,Meat and Seafood,"READY, SET…COOK! Beef Burgers 500g",7.79,15.58,1KG,https://www.aldi.com.au/product/ready-set-cook-beef-burgers-500g-000000000000405604
+Aldi,Meat and Seafood,READY SET…COOK! Beef Burgers 500g,7.79,15.58,1KG,https://www.aldi.com.au/product/ready-set-cook-beef-burgers-500g-000000000000405604
 Aldi,Meat and Seafood,THE FISHMONGER Fresh Tasmanian Salmon Fillets Skin On 4 Pack 460g,14.99,32.59,1KG,https://www.aldi.com.au/product/the-fishmonger-fresh-tasmanian-salmon-fillets-skin-on-4-pack-460g-000000000000405629
 Aldi,Meat and Seafood,BROAD OAK FARMS RSPCA Approved Chicken Breast Fillet 1 Pack 300g,4.99,16.63,1KG,https://www.aldi.com.au/product/broad-oak-farms-chicken-breast-fillet-1-pack-300g-000000000000405649
 Aldi,Meat and Seafood,BROAD OAK FARMS Turkey Mince 500g,5.99,11.98,1KG,https://www.aldi.com.au/product/broad-oak-farms-turkey-mince-500g-000000000000405655
-Aldi,Meat and Seafood,"READY, SET…COOK! Lamb Souvlaki Strips",13.0,25.99,1KG,https://www.aldi.com.au/product/ready-set-cook-lamb-souvlaki-strips-000000000000461357
+Aldi,Meat and Seafood,READY SET…COOK! Lamb Souvlaki Strips,13.0,25.99,1KG,https://www.aldi.com.au/product/ready-set-cook-lamb-souvlaki-strips-000000000000461357
 Aldi,Meat and Seafood,BROAD OAK FARMS RSPCA Approved Chicken Mixed Pieces 2kg,7.99,4.0,1KG,https://www.aldi.com.au/product/broad-oak-farms-rspca-approved-chicken-mixed-pieces-1kg-000000000000476513
 Aldi,Meat and Seafood,THE FISHMONGER Garlic Prawns 280g,9.99,35.68,1KG,https://www.aldi.com.au/product/the-fishmonger-garlic-prawns-280g-000000000000482114
 Aldi,Meat and Seafood,SPECIALLY SELECTED 100 Day Grain Fed Scotch Fillet 1kg,18.0,47.99,1KG,https://www.aldi.com.au/product/specially-selected-100-day-grain-fed-scotch-fillet-1kg-000000000000484868
-Aldi,Meat and Seafood,"READY, SET…COOK! Pulled Beef Brisket 500g",9.99,19.98,1KG,https://www.aldi.com.au/product/ready-set-cook-pulled-beef-brisket-500g-000000000000496202
+Aldi,Meat and Seafood,READY SET…COOK! Pulled Beef Brisket 500g,9.99,19.98,1KG,https://www.aldi.com.au/product/ready-set-cook-pulled-beef-brisket-500g-000000000000496202
 Aldi,Meat and Seafood,JINDURRA STATION 4 Star Grass Fed Beef Mince 500g,8.99,17.98,1KG,https://www.aldi.com.au/product/jindurra-station-4-star-beef-mince-500g-000000000000500959
 Aldi,Meat and Seafood,JINDURRA STATION Beef Scotch Fillet 2 Pack,15.0,37.49,1KG,https://www.aldi.com.au/product/jindurra-station-beef-scotch-fillet-2-pack-per-kg-000000000000506840
 Aldi,Meat and Seafood,BROAD OAK FARMS RSPCA Approved Chicken Maryland Fillets,14.94,11.49,1KG,https://www.aldi.com.au/product/broad-oak-farms-chicken-maryland-fillets-000000000000510579
-Aldi,Meat and Seafood,"READY, SET…COOK! Free Range Marinated Chicken Wings 1.5kg",13.49,8.99,1KG,https://www.aldi.com.au/product/ready-set-cook-marinated-chicken-wings-1-5kg-000000000000512250
-Aldi,Meat and Seafood,"READY, SET…COOK! Marinated RSPCA Approved Chicken Breast Steaks",8.75,17.49,1KG,https://www.aldi.com.au/product/ready-set-cook-marinated-chicken-breast-steaks-per-kg-000000000000523338
+Aldi,Meat and Seafood,READY SET…COOK! Free Range Marinated Chicken Wings 1.5kg,13.49,8.99,1KG,https://www.aldi.com.au/product/ready-set-cook-marinated-chicken-wings-1-5kg-000000000000512250
+Aldi,Meat and Seafood,READY SET…COOK! Marinated RSPCA Approved Chicken Breast Steaks,8.75,17.49,1KG,https://www.aldi.com.au/product/ready-set-cook-marinated-chicken-breast-steaks-per-kg-000000000000523338
 Aldi,Meat and Seafood,BROAD OAK FARMS Free Range Fresh Whole Chicken,10.18,5.99,1KG,https://www.aldi.com.au/product/broad-oak-farms-free-range-fresh-whole-chicken-000000000000531960
 Aldi,Meat and Seafood,BROAD OAK FARMS Free Range Chicken Drumsticks,4.99,4.99,1KG,https://www.aldi.com.au/product/broad-oak-farms-broad-oak-farms-free-range-chicken-drumsticks-000000000000532458
-Aldi,Meat and Seafood,"READY, SET…COOK! Beef Porterhouse Steak with Garlic and Herb Butter 400g",14.49,36.23,1KG,https://www.aldi.com.au/product/ready-set-cook-beef-phouse-steak-400g-000000000000532959
+Aldi,Meat and Seafood,READY SET…COOK! Beef Porterhouse Steak with Garlic and Herb Butter 400g,14.49,36.23,1KG,https://www.aldi.com.au/product/ready-set-cook-beef-phouse-steak-400g-000000000000532959
 Aldi,Meat and Seafood,KILLARNEE Lamb Mince 500g,7.49,14.98,1KG,https://www.aldi.com.au/product/killarnee-lamb-mince-500g-000000000000539800
 Aldi,Meat and Seafood,IRONBARK PORK Boneless Pork Shoulder Roast,17.98,8.99,1KG,https://www.aldi.com.au/product/ironbark-pork-pork-shoulder-boneless-roast-1kg-000000000000543801
 Aldi,Meat and Seafood,JINDURRA STATION Beef Rump Steak,12.5,24.99,1KG,https://www.aldi.com.au/product/jindurra-station-beef-rump-steak-000000000000545102
-Aldi,Meat and Seafood,"READY, SET…COOK! RSPCA Approved Chicken and Cheese Schnitzel 1kg",9.49,9.49,1KG,https://www.aldi.com.au/product/ready-set-cook-chicken-and-cheese-schnitzel-1kg-000000000000545837
-Aldi,Meat and Seafood,"READY, SET…COOK! RSPCA Approved Chicken Burger Bulk Pack 1.2kg",8.99,7.49,1KG,https://www.aldi.com.au/product/ready-set-cook-chicken-burger-pack-1-2kg-000000000000550680
-Aldi,Meat and Seafood,"READY, SET…COOK! Herb & Garlic Chicken Tenders 400g",6.99,17.48,1KG,https://www.aldi.com.au/product/ready-set-cook-herb-garlic-chicken-tenders-400g-000000000000550766
+Aldi,Meat and Seafood,READY SET…COOK! RSPCA Approved Chicken and Cheese Schnitzel 1kg,9.49,9.49,1KG,https://www.aldi.com.au/product/ready-set-cook-chicken-and-cheese-schnitzel-1kg-000000000000545837
+Aldi,Meat and Seafood,READY SET…COOK! RSPCA Approved Chicken Burger Bulk Pack 1.2kg,8.99,7.49,1KG,https://www.aldi.com.au/product/ready-set-cook-chicken-burger-pack-1-2kg-000000000000550680
+Aldi,Meat and Seafood,READY SET…COOK! Herb & Garlic Chicken Tenders 400g,6.99,17.48,1KG,https://www.aldi.com.au/product/ready-set-cook-herb-garlic-chicken-tenders-400g-000000000000550766
 Aldi,Meat and Seafood,THE FISHMONGER Fresh Australian Barramundi Fillets 2 Pack 260g,10.99,42.27,1KG,https://www.aldi.com.au/product/the-fishmonger-fresh-australian-barramundi-fillets-2-pack-260g-000000000000553032
-Aldi,Meat and Seafood,"READY, SET…COOK! Southern Style RSPCA Approved Chicken Thigh Fillet Burger 350g",7.29,20.83,1KG,https://www.aldi.com.au/product/ready-set-cook-frozen-chicken-thigh-burgers-350g-000000000000569259
-Aldi,Meat and Seafood,"READY, SET…COOK! Honey Beef Sausages 500g",4.29,8.58,1KG,https://www.aldi.com.au/product/ready-set-cook-honey-beef-sausages-500g-000000000000570498
-Aldi,Meat and Seafood,"READY, SET…COOK! Thin Sausages 500g",3.99,7.98,1KG,https://www.aldi.com.au/product/ready-set-cook-gluten-free-thin-sausages-500g-000000000000570520
-Aldi,Meat and Seafood,"READY, SET…COOK! Thin Sausages 24 Pack 1.8kg",9.99,5.55,1KG,https://www.aldi.com.au/product/ready-set-cook-thin-sausages-24-pack-1-8kg-000000000000570534
-Aldi,Meat and Seafood,"READY, SET…COOK! Pork Sausages 500g",4.29,8.58,1KG,https://www.aldi.com.au/product/ready-set-cook-pork-sausages-500g-000000000000570535
-Aldi,Meat and Seafood,"READY, SET…COOK! Herb & Garlic Beef Sausages 500g",4.69,9.38,1KG,https://www.aldi.com.au/product/ready-set-cook-herb-garlic-beef-sausages-500g-000000000000576747
-Aldi,Meat and Seafood,"READY, SET…COOK! Lamb Shanks Cooked",14.69,14.69,1KG,https://www.aldi.com.au/product/ready-set-cook-ready-set-cook-lamb-shanks-cooked-000000000000577983
-Aldi,Meat and Seafood,"READY, SET…COOK! Lamb Shoulder Lemon Myrtle Thyme & Mint",29.89,22.99,1KG,https://www.aldi.com.au/product/ready-set-cook-lamb-shoulder-lemon-myrtle-thyme-mint-1kg-000000000000584721
-Aldi,Meat and Seafood,"READY, SET…COOK! Infused Beef Brisket",15.59,12.99,1KG,https://www.aldi.com.au/product/ready-set-cook-infused-beef-brisket-000000000000585820
+Aldi,Meat and Seafood,READY SET…COOK! Southern Style RSPCA Approved Chicken Thigh Fillet Burger 350g,7.29,20.83,1KG,https://www.aldi.com.au/product/ready-set-cook-frozen-chicken-thigh-burgers-350g-000000000000569259
+Aldi,Meat and Seafood,READY SET…COOK! Honey Beef Sausages 500g,4.29,8.58,1KG,https://www.aldi.com.au/product/ready-set-cook-honey-beef-sausages-500g-000000000000570498
+Aldi,Meat and Seafood,READY SET…COOK! Thin Sausages 500g,3.99,7.98,1KG,https://www.aldi.com.au/product/ready-set-cook-gluten-free-thin-sausages-500g-000000000000570520
+Aldi,Meat and Seafood,READY SET…COOK! Thin Sausages 24 Pack 1.8kg,9.99,5.55,1KG,https://www.aldi.com.au/product/ready-set-cook-thin-sausages-24-pack-1-8kg-000000000000570534
+Aldi,Meat and Seafood,READY SET…COOK! Pork Sausages 500g,4.29,8.58,1KG,https://www.aldi.com.au/product/ready-set-cook-pork-sausages-500g-000000000000570535
+Aldi,Meat and Seafood,READY SET…COOK! Herb & Garlic Beef Sausages 500g,4.69,9.38,1KG,https://www.aldi.com.au/product/ready-set-cook-herb-garlic-beef-sausages-500g-000000000000576747
+Aldi,Meat and Seafood,READY SET…COOK! Lamb Shanks Cooked,14.69,14.69,1KG,https://www.aldi.com.au/product/ready-set-cook-ready-set-cook-lamb-shanks-cooked-000000000000577983
+Aldi,Meat and Seafood,READY SET…COOK! Lamb Shoulder Lemon Myrtle Thyme & Mint,29.89,22.99,1KG,https://www.aldi.com.au/product/ready-set-cook-lamb-shoulder-lemon-myrtle-thyme-mint-1kg-000000000000584721
+Aldi,Meat and Seafood,READY SET…COOK! Infused Beef Brisket,15.59,12.99,1KG,https://www.aldi.com.au/product/ready-set-cook-infused-beef-brisket-000000000000585820
 Aldi,Meat and Seafood,BERG Ham Steaks 300g,3.99,13.3,1KG,https://www.aldi.com.au/product/berg-ham-steaks-300g-000000000000586256
 Aldi,Meat and Seafood,IRONBARK PORK Pork Forequarter Cutlet,11.04,12.99,1KG,https://www.aldi.com.au/product/ironbark-pork-pork-forequarter-cutlet-000000000000590573
 Aldi,Meat and Seafood,SPECIALLY SELECTED Beef Wagyu Burger 150g,3.99,26.6,1KG,https://www.aldi.com.au/product/specially-selected-beef-wagyu-burger-150g-000000000000593847
-Aldi,Meat and Seafood,"READY, SET…COOK! Marinated BBQ Roast Beef",20.39,16.99,1KG,https://www.aldi.com.au/product/ready-set-cook-marinated-bbq-roast-beef-000000000000596328
-Aldi,Meat and Seafood,"READY, SET…COOK! Beef Schnitzel with Crumb Coating 320g",6.99,21.84,1KG,https://www.aldi.com.au/product/ready-set-cook-ready-set-cook-crumbed-beef-schnitzel-320g-000000000000596366
+Aldi,Meat and Seafood,READY SET…COOK! Marinated BBQ Roast Beef,20.39,16.99,1KG,https://www.aldi.com.au/product/ready-set-cook-marinated-bbq-roast-beef-000000000000596328
+Aldi,Meat and Seafood,READY SET…COOK! Beef Schnitzel with Crumb Coating 320g,6.99,21.84,1KG,https://www.aldi.com.au/product/ready-set-cook-ready-set-cook-crumbed-beef-schnitzel-320g-000000000000596366
 Aldi,Meat and Seafood,JINDURRA STATION Beef Porterhouse Steak 2 Pack,20.34,36.99,1KG,https://www.aldi.com.au/product/jindurra-station-beef-porterhouse-steak-2-pack-000000000000596388
 Aldi,Meat and Seafood,BERG Chicken Franks 375g,3.99,10.64,1KG,https://www.aldi.com.au/product/berg-berg-chicken-franks-375g-000000000000598037
-Aldi,Meat and Seafood,"READY, SET…COOK! Slow Cooked Beef Ragu 500g",9.99,19.98,1KG,https://www.aldi.com.au/product/ready-set-cook-ready-set-cook-beef-ragu-500g-000000000000598193
+Aldi,Meat and Seafood,READY SET…COOK! Slow Cooked Beef Ragu 500g,9.99,19.98,1KG,https://www.aldi.com.au/product/ready-set-cook-ready-set-cook-beef-ragu-500g-000000000000598193
 Aldi,Meat and Seafood,BROAD OAK FARMS Free Range Chicken Breast Bulk Pack,17.86,12.99,1KG,https://www.aldi.com.au/product/broad-oak-farms-broad-oak-farms-fr-chicken-breast-bulk-rw-000000000000598523
 Aldi,Meat and Seafood,BROAD OAK FARMS Free Range Chicken Thigh Fillet Bulk Pack,17.66,15.49,1KG,https://www.aldi.com.au/product/broad-oak-farms-ready-set-cook-fr-ckn-thigh-filt-bulk-pack-rw-000000000000599030
 Aldi,Meat and Seafood,BROAD OAK FARMS Free Range Chicken Tenderloins,10.44,18.99,1KG,https://www.aldi.com.au/product/broad-oak-farms-broad-oak-farms-free-range-ckn-tenderloins-rw-000000000000599117
@@ -1023,30 +1023,30 @@ Aldi,Meat and Seafood,BROAD OAK FARMS Free Range Chicken Wing Nibbles,7.99,7.99,
 Aldi,Meat and Seafood,IRONBARK PORK Pork Bulk Pork Chops,20.99,17.49,1KG,https://www.aldi.com.au/product/ironbark-pork-pork-bulk-pork-chops-000000000000612762
 Aldi,Meat and Seafood,THE FISHMONGER Fresh Salmon Maple and Sriracha 4 Pack 480g,16.99,35.4,1KG,https://www.aldi.com.au/product/the-fishmonger-fresh-salmon-maple-and-siracha-4-pack-480g-000000000000621294
 Aldi,Meat and Seafood,IRONBARK PORK Pork Cutlet,5.4,18.49,1KG,https://www.aldi.com.au/product/ironbark-pork-pork-cutlet-000000000000622186
-Aldi,Meat and Seafood,"READY, SET…COOK! Chicken and Mushroom Puff Pastry Parcels 2 Pack 330g",7.49,22.7,1KG,https://www.aldi.com.au/product/ready-set-cook-chicken-and-mushroom-puff-pastry-parcels-2-pack-330g-000000000000626234
-Aldi,Meat and Seafood,"READY, SET…COOK! Chicken Pho Meal Kit 560g",14.99,25.84,1KG,https://www.aldi.com.au/product/ready-set-cook-chicken-pho-meal-kit-560g-000000000000626243
-Aldi,Meat and Seafood,"READY, SET…COOK! Chicken Breast with Garlic Butter 500g",9.99,19.98,1KG,https://www.aldi.com.au/product/ready-set-cook-chicken-breast-with-garlic-butter-500g-000000000000627022
-Aldi,Meat and Seafood,"READY, SET…COOK! Chicken Roulade with Tomato Pesto",11.89,16.99,1KG,https://www.aldi.com.au/product/ready-set-cook-chicken-roulade-with-tomato-pesto-000000000000627025
-Aldi,Meat and Seafood,"READY, SET…COOK! Whole Chicken with Stuffed Cheesy Garlic Bread",17.13,6.99,1KG,https://www.aldi.com.au/product/ready-set-cook-whole-chicken-with-stuffed-cheesy-garlic-bread-000000000000630787
-Aldi,Meat and Seafood,"READY, SET…COOK! Pork Loin Korean Style",14.84,16.49,1KG,https://www.aldi.com.au/product/ready-set-cook-pork-loin-korean-style-000000000000642713
-Aldi,Meat and Seafood,"READY, SET…COOK! Cooked Pork Shoulder 500g",10.99,21.98,1KG,https://www.aldi.com.au/product/ready-set-cook-cooked-pork-shoulder-500g-000000000000644119
-Aldi,Meat and Seafood,"READY, SET…COOK! Beef Meatloaf 1kg",12.99,12.99,1KG,https://www.aldi.com.au/product/ready-set-cook-beef-meatloaf-1kg-000000000000644894
-Aldi,Meat and Seafood,"READY, SET…COOK! Beef, Bacon Sausage Rolls 460g",7.49,16.28,1KG,https://www.aldi.com.au/product/ready-set-cook-beef-bacon-sausage-rolls-460g-000000000000645334
-Aldi,Meat and Seafood,"READY, SET…COOK! Lamb Yiros 500g",11.99,23.98,1KG,https://www.aldi.com.au/product/ready-set-cook-lamb-yiros-500g-000000000000646275
+Aldi,Meat and Seafood,READY SET…COOK! Chicken and Mushroom Puff Pastry Parcels 2 Pack 330g,7.49,22.7,1KG,https://www.aldi.com.au/product/ready-set-cook-chicken-and-mushroom-puff-pastry-parcels-2-pack-330g-000000000000626234
+Aldi,Meat and Seafood,READY SET…COOK! Chicken Pho Meal Kit 560g,14.99,25.84,1KG,https://www.aldi.com.au/product/ready-set-cook-chicken-pho-meal-kit-560g-000000000000626243
+Aldi,Meat and Seafood,READY SET…COOK! Chicken Breast with Garlic Butter 500g,9.99,19.98,1KG,https://www.aldi.com.au/product/ready-set-cook-chicken-breast-with-garlic-butter-500g-000000000000627022
+Aldi,Meat and Seafood,READY SET…COOK! Chicken Roulade with Tomato Pesto,11.89,16.99,1KG,https://www.aldi.com.au/product/ready-set-cook-chicken-roulade-with-tomato-pesto-000000000000627025
+Aldi,Meat and Seafood,READY SET…COOK! Whole Chicken with Stuffed Cheesy Garlic Bread,17.13,6.99,1KG,https://www.aldi.com.au/product/ready-set-cook-whole-chicken-with-stuffed-cheesy-garlic-bread-000000000000630787
+Aldi,Meat and Seafood,READY SET…COOK! Pork Loin Korean Style,14.84,16.49,1KG,https://www.aldi.com.au/product/ready-set-cook-pork-loin-korean-style-000000000000642713
+Aldi,Meat and Seafood,READY SET…COOK! Cooked Pork Shoulder 500g,10.99,21.98,1KG,https://www.aldi.com.au/product/ready-set-cook-cooked-pork-shoulder-500g-000000000000644119
+Aldi,Meat and Seafood,READY SET…COOK! Beef Meatloaf 1kg,12.99,12.99,1KG,https://www.aldi.com.au/product/ready-set-cook-beef-meatloaf-1kg-000000000000644894
+Aldi,Meat and Seafood,READY SET…COOK! Beef Bacon Sausage Rolls 460g,7.49,16.28,1KG,https://www.aldi.com.au/product/ready-set-cook-beef-bacon-sausage-rolls-460g-000000000000645334
+Aldi,Meat and Seafood,READY SET…COOK! Lamb Yiros 500g,11.99,23.98,1KG,https://www.aldi.com.au/product/ready-set-cook-lamb-yiros-500g-000000000000646275
 Aldi,Meat and Seafood,SPECIALLY SELECTED Lamb Shiraz Garlic Sausage 500g,7.99,15.98,1KG,https://www.aldi.com.au/product/specially-selected-lamb-shiraz-garlic-sausage-500g-000000000000654393
 Aldi,Meat and Seafood,TALLEY'S Greenshell Mussels Original 375g,6.49,17.31,1KG,https://www.aldi.com.au/product/talley-s-greenshell-mussels-original-375g-000000000000656123
 Aldi,Meat and Seafood,JINDURRA STATION Rump Steak Bulk,20.99,20.99,1KG,https://www.aldi.com.au/product/jindurra-station-rump-steak-bulk-000000000000666171
 Aldi,Meat and Seafood,THE FISHMONGER Natural Hot Smoked Salmon 150g,7.99,53.27,1KG,https://www.aldi.com.au/product/the-fishmonger-natural-hot-smoked-salmon-150g-000000000306123001
 Aldi,Meat and Seafood,THE FISHMONGER Cracked Pepper Hot Smoked Salmon 150g,7.99,53.27,1KG,https://www.aldi.com.au/product/the-fishmonger-cracked-pepper-hot-smoked-salmon-150g-000000000306123002
-Aldi,Meat and Seafood,"READY, SET…COOK! Fresh Marinated Chicken Wings Honey Soy 1kg",7.99,7.99,1KG,https://www.aldi.com.au/product/ready-set-cook-fresh-marinated-chicken-wings-honey-soy-1kg-000000000398439001
-Aldi,Meat and Seafood,"READY, SET…COOK! Fresh Marinated Chicken Wings Buffalo Style 1kg",7.99,7.99,1KG,https://www.aldi.com.au/product/ready-set-cook-fresh-marinated-chicken-wings-buffalo-style-1kg-000000000398439002
-Aldi,Meat and Seafood,"READY, SET…COOK! Crumbed Chicken Tenders Buffalo Style 400g",7.39,18.48,1KG,https://www.aldi.com.au/product/ready-set-cook-crumbed-chicken-tenders-buffalo-style-400g-000000000398919001
-Aldi,Meat and Seafood,"READY, SET…COOK! Crumbed Chicken Tenders 400g",7.39,18.48,1KG,https://www.aldi.com.au/product/ready-set-cook-crumbed-chicken-tenders-400g-000000000398919002
-Aldi,Meat and Seafood,"READY, SET…COOK! Chicken Breast Schnitzel Crunchy Homestyle 4 Pack 600g",7.99,13.32,1KG,https://www.aldi.com.au/product/ready-set-cook-chicken-breast-schnitzel-crunchy-homestyle-4-pack-600g-000000000399072001
-Aldi,Meat and Seafood,"READY, SET…COOK! Chicken Breast Schnitzel Parmigiana 4 Pack 600g",7.99,13.32,1KG,https://www.aldi.com.au/product/ready-set-cook-chicken-breast-schnitzel-parmigiana-4-pack-600g-000000000399072002
-Aldi,Meat and Seafood,"READY, SET…COOK! Boneless Butterflied Chicken Greek Style",12.09,10.99,1KG,https://www.aldi.com.au/product/ready-set-cook-boneless-butterflied-chicken-greek-style-per-kg-000000000399156001
-Aldi,Meat and Seafood,"READY, SET…COOK! Boneless Butterflied Chicken Spiced Mango",12.09,10.99,1KG,https://www.aldi.com.au/product/ready-set-cook-boneless-butterflied-chicken-spiced-mango-per-kg-000000000399156002
-Aldi,Meat and Seafood,"READY, SET…COOK! California BBQ Marinated Split RSPCA Approved Chicken",9.34,8.69,1KG,https://www.aldi.com.au/product/ready-set-cook-california-bbq-marinated-split-chicken-per-kg-000000000399726003
-Aldi,Meat and Seafood,"READY, SET…COOK! Portuguese Peri Peri Marinated Split Chicken",9.34,8.69,1KG,https://www.aldi.com.au/product/ready-set-cook-portuguese-peri-peri-marinated-split-chicken-per-kg-000000000399726004
-Aldi,Meat and Seafood,"READY, SET…COOK! BBQ RSPCA Approved Chicken Kebabs 800g",11.29,14.11,1KG,https://www.aldi.com.au/product/ready-set-cook-bbq-chicken-kebabs-800g-000000000575121001
-Aldi,Meat and Seafood,"READY, SET…COOK! Honey Soy RSPCA Approved Chicken Kebabs 800g",11.29,14.11,1KG,https://www.aldi.com.au/product/ready-set-cook-honey-soy-chicken-kebabs-800g-000000000575121002
+Aldi,Meat and Seafood,READY SET…COOK! Fresh Marinated Chicken Wings Honey Soy 1kg,7.99,7.99,1KG,https://www.aldi.com.au/product/ready-set-cook-fresh-marinated-chicken-wings-honey-soy-1kg-000000000398439001
+Aldi,Meat and Seafood,READY SET…COOK! Fresh Marinated Chicken Wings Buffalo Style 1kg,7.99,7.99,1KG,https://www.aldi.com.au/product/ready-set-cook-fresh-marinated-chicken-wings-buffalo-style-1kg-000000000398439002
+Aldi,Meat and Seafood,READY SET…COOK! Crumbed Chicken Tenders Buffalo Style 400g,7.39,18.48,1KG,https://www.aldi.com.au/product/ready-set-cook-crumbed-chicken-tenders-buffalo-style-400g-000000000398919001
+Aldi,Meat and Seafood,READY SET…COOK! Crumbed Chicken Tenders 400g,7.39,18.48,1KG,https://www.aldi.com.au/product/ready-set-cook-crumbed-chicken-tenders-400g-000000000398919002
+Aldi,Meat and Seafood,READY SET…COOK! Chicken Breast Schnitzel Crunchy Homestyle 4 Pack 600g,7.99,13.32,1KG,https://www.aldi.com.au/product/ready-set-cook-chicken-breast-schnitzel-crunchy-homestyle-4-pack-600g-000000000399072001
+Aldi,Meat and Seafood,READY SET…COOK! Chicken Breast Schnitzel Parmigiana 4 Pack 600g,7.99,13.32,1KG,https://www.aldi.com.au/product/ready-set-cook-chicken-breast-schnitzel-parmigiana-4-pack-600g-000000000399072002
+Aldi,Meat and Seafood,READY SET…COOK! Boneless Butterflied Chicken Greek Style,12.09,10.99,1KG,https://www.aldi.com.au/product/ready-set-cook-boneless-butterflied-chicken-greek-style-per-kg-000000000399156001
+Aldi,Meat and Seafood,READY SET…COOK! Boneless Butterflied Chicken Spiced Mango,12.09,10.99,1KG,https://www.aldi.com.au/product/ready-set-cook-boneless-butterflied-chicken-spiced-mango-per-kg-000000000399156002
+Aldi,Meat and Seafood,READY SET…COOK! California BBQ Marinated Split RSPCA Approved Chicken,9.34,8.69,1KG,https://www.aldi.com.au/product/ready-set-cook-california-bbq-marinated-split-chicken-per-kg-000000000399726003
+Aldi,Meat and Seafood,READY SET…COOK! Portuguese Peri Peri Marinated Split Chicken,9.34,8.69,1KG,https://www.aldi.com.au/product/ready-set-cook-portuguese-peri-peri-marinated-split-chicken-per-kg-000000000399726004
+Aldi,Meat and Seafood,READY SET…COOK! BBQ RSPCA Approved Chicken Kebabs 800g,11.29,14.11,1KG,https://www.aldi.com.au/product/ready-set-cook-bbq-chicken-kebabs-800g-000000000575121001
+Aldi,Meat and Seafood,READY SET…COOK! Honey Soy RSPCA Approved Chicken Kebabs 800g,11.29,14.11,1KG,https://www.aldi.com.au/product/ready-set-cook-honey-soy-chicken-kebabs-800g-000000000575121002
