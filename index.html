@@ -61,8 +61,8 @@
                 <th>Supermarket <span class="sort-icon">↕</span></th>
                 <th>Category <span class="sort-icon">↕</span></th>
                 <th>Product Title <span class="sort-icon">↕</span></th>
-                <th>Product Price ($) <span class="sort-icon">↕</span></th>
-                <th>Base Price ($) <span class="sort-icon">↕</span></th>
+                <th>Price ($) <span class="sort-icon">↕</span></th>
+                <th>Unit Price ($) <span class="sort-icon">↕</span></th>
                 <th>Per unit <span class="sort-icon">↕</span></th>
                 <th>Product URL</th>
             </tr>
@@ -95,7 +95,7 @@
                 resetfilter();
                 searchTable();
                 updateCategoryFilter();
-                categoryhide();
+                columnhide();
             //catch (err) {
                 //console.error("Failed to load and search:", err);
             }
@@ -207,11 +207,13 @@
             }
         }
 
-        //hide Category column after searching or filtering results
-        function categoryhide() {
+        //hide Category and URL column after searching or filtering results
+        function columnhide() {
             document.querySelectorAll("table tr").forEach(row => {
-                const categorycell1 = row.children[1]; // index 1 = 2nd column
-                if (categorycell1) categorycell1.style.display = "none";
+                const categorycell1 = row.children[1]; // index 1 = 2nd column which is category column
+                const categorycell2 = row.children[6]; // index 6 = 6th column which is URL column
+                if (categorycell1) categorycell1.style.display = "none"; //hide category column
+                if (categorycell2) categorycell2.style.display = "none"
             });
         }
 
