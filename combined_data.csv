@@ -1,7 +1,7 @@
 Supermarket,Category,Product Title,Product Price,Base Price,Per unit,Product URL
-Woolworths,Meat and Seafood,Cooke Seafood Smoked Salmon 100g,8.0,80.0,1KG,https://www.woolworths.com.au/shop/productdetails/804567/cooke-seafood-smoked-salmon
+Woolworths,Fish,Cooke Seafood Smoked Salmon 100g,8.0,80.0,1KG,https://www.woolworths.com.au/shop/productdetails/804567/cooke-seafood-smoked-salmon
 Woolworths,Meat and Seafood,Woolworths RSPCA Approved Chicken Breast Fillet Min. 300g per kg,12.0,12.0,1KG,https://www.woolworths.com.au/shop/productdetails/25734/woolworths-rspca-approved-chicken-breast-fillet-min-300g
-Woolworths,Meat and Seafood,Woolworths Heart Smart Extra Lean Beef Mince 500g,10.0,20.0,1KG,https://www.woolworths.com.au/shop/productdetails/577860/woolworths-heart-smart-extra-lean-beef-mince
+Woolworths,Beef,Woolworths Heart Smart Extra Lean Beef Mince 500g,10.0,20.0,1KG,https://www.woolworths.com.au/shop/productdetails/577860/woolworths-heart-smart-extra-lean-beef-mince
 Woolworths,Meat and Seafood,Woolworths RSPCA Approved Chicken Thigh Fillet per kg,15.0,15.0,1KG,https://www.woolworths.com.au/shop/productdetails/77038/woolworths-rspca-approved-chicken-thigh-fillet
 Woolworths,Meat and Seafood,Champagne Leg Ham Shaved From The Deli Per Kg,23.5,23.5,1KG,https://www.woolworths.com.au/shop/productdetails/129693/champagne-leg-ham-shaved-from-the-deli
 Woolworths,Meat and Seafood,Woolworths Lean Beef Mince 1kg,16.0,16.0,1KG,https://www.woolworths.com.au/shop/productdetails/577862/woolworths-lean-beef-mince
@@ -814,7 +814,7 @@ Coles,Meat and Seafood,The Bare Bird Chicken Thigh Fillets | 480g,13.5,28.13,1kg
 Coles,Meat and Seafood,Coles RSPCA Approved Chicken Mixed Portions Southern Fried | 1.2kg,15.5,12.92,1kg,https://www.coles.com.au/product/coles-rspca-approved-chicken-mixed-portions-southern-fried-1.2kg-7382540
 Coles,Meat and Seafood,Coles Pork Ribs Sticky Sticky American Bbq Glaze | approx. 1kg,22.0,22.0,1kg,https://www.coles.com.au/product/coles-pork-ribs-sticky-sticky-american-bbq-glaze-approx.-1kg-7414249
 Coles,Meat and Seafood,El-amin's Lamb Shoulder Roast On The Bone | approx. 2.2kg,30.8,14.0,1kg,https://www.coles.com.au/product/el-amin's-lamb-shoulder-roast-on-the-bone-approx.-2.2kg-7436467
-Coles,Meat and Seafood,El-Amin's Burgers | 500g,8.0,16.0,1kg,https://www.coles.com.au/product/el-amin's-burgers-500g-7437335
+Coles,Burgers,El-Amin's Burgers | 500g,8.0,16.0,1kg,https://www.coles.com.au/product/el-amin's-burgers-500g-7437335
 Coles,Meat and Seafood,El-Amin's Lamb Shawarma | 500g,13.0,26.0,1kg,https://www.coles.com.au/product/el-amin's-lamb-shawarma-500g-7437426
 Coles,Meat and Seafood,Coles Made Easy Slow Cooked Pork Ribs In Bbq Sauce | 650g,14.5,22.31,1kg,https://www.coles.com.au/product/coles-made-easy-slow-cooked-pork-ribs-in-bbq-sauce-650g-7438338
 Coles,Meat and Seafood,Fettayleh Wagyu Beef Salami | 100g,10.0,100.0,1kg,https://www.coles.com.au/product/fettayleh-wagyu-beef-salami-100g-7510184
