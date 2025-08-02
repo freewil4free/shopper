@@ -1,44 +1,49 @@
 // Function to load CSV data and populate the table
 async function loadCSVData() {
+    const loadingDiv = document.getElementById("loadingMessage");
+    loadingDiv.style.display = 'block';
+
+    const response = await fetch("combined_data.csv");
+    const csvText = await response.text();
+
     return new Promise((resolve, reject) => {
-        fetch('combined_data.csv') // replace with your actual CSV file path
-            .then(response => {
-                if (!response.ok) throw new Error('Network response was not ok');
-                return response.text();
-            })
-            .then(csvText => {
-                const rows = csvText.trim().split('\n');
-                const tableBody = document.getElementById('tableBody');
-                tableBody.innerHTML = ''; // Clear old data
+        const worker = new Worker("csvworker.js");
 
-                for (let i = 1; i < rows.length; i++) { // Assuming row 0 is header
-                    const cols = rows[i].split(',');
-                    const tr = document.createElement('tr');
+        worker.postMessage(csvText);
 
-                    // Create table cells for each column
-                    cols.forEach((col, index) => {
-                        const td = document.createElement('td');
-                        if (index === 2) { // URL column
-                            const a = document.createElement('a');
-                            a.href = cols[6];
-                            a.textContent = cols[2];
-                            a.target = '_blank';
-                            td.appendChild(a);
-                        
-                        } else {                       
-                            td.textContent = col.trim();
-                        }
-                        tr.appendChild(td);
-                    });
+        worker.onmessage = function(e) {
+            const rows = e.data;
+            const tableBody = document.getElementById("tableBody");
+            tableBody.innerHTML = '';
 
-                    tableBody.appendChild(tr);
-                }
-                console.log('CSV data loaded into table');
-                resolve();
-            })
-            .catch(err => {
-                console.error('Error loading CSV data:', err);
-                reject(err);
+            rows.forEach(cols => {
+                const tr = document.createElement("tr");
+
+                cols.forEach((col, index) => {
+                    const td = document.createElement("td");
+                    if (index === 2) {
+                        const a = document.createElement("a");
+                        a.href = cols[6];
+                        a.textContent = cols[2];
+                        a.target = "_blank";
+                        td.appendChild(a);
+                    } else {
+                        td.textContent = col.trim();
+                    }
+                    tr.appendChild(td);
+                });
+
+                tableBody.appendChild(tr);
             });
+
+            loadingDiv.style.display = 'none';
+            resolve();
+        };
+
+        worker.onerror = function(err) {
+            console.error("Worker error:", err);
+            loadingDiv.style.display = 'none';
+            reject(err);
+        };
     });
 }
