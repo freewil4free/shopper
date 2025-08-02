@@ -15,9 +15,19 @@ async function loadCSVData() {
                     const cols = rows[i].split(',');
                     const tr = document.createElement('tr');
 
-                    cols.forEach(col => {
+                    // Create table cells for each column
+                    cols.forEach((col, index) => {
                         const td = document.createElement('td');
-                        td.textContent = col.trim();
+                        if (index === 2) { // URL column
+                            const a = document.createElement('a');
+                            a.href = cols[6];
+                            a.textContent = cols[2];
+                            a.target = '_blank';
+                            td.appendChild(a);
+                        
+                        } else {                       
+                            td.textContent = col.trim();
+                        }
                         tr.appendChild(td);
                     });
 
