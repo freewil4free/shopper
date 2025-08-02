@@ -53,7 +53,9 @@
         <select id="categoryFilter">
             <option value="All">All Categories</option>
         </select>
-    </div>
+    </div> 
+    
+    <div id="loadingMessage" style="display: none; font-weight: bold; color: red;">Loading CSV data...</div>
 
     <table id="productTable">
         <thead>
@@ -236,11 +238,16 @@
 
         // Sort function
         function sortTable(columnIndex) {
+            const loadingDiv = document.getElementById("loadingMessage");
+            loadingDiv.style.display = 'block';
             const table = document.getElementById("tableBody");
-            const rows = Array.from(table.getElementsByTagName("tr"));
+            const rows = Array.from(table.getElementsByTagName("tr")).filter(row1 => {
+                return window.getComputedStyle(row1).display !== "none";
+            });
             let sortDirection = table.dataset.sortDirection || "asc";
             let sortColumn = table.dataset.sortColumn || -1;
 
+            console.log(`Visible rows: ${rows.length}`);
             console.log(`Before toggle: column=${sortColumn}, direction=${sortDirection}`);
 
             // Toggle direction if clicking same column
@@ -281,6 +288,7 @@
             
             // Update sort indicators
             updateSortIndicators(columnIndex, sortDirection);
+            loadingDiv.style.display = 'none';
         }
         
         function updateSortIndicators(columnIndex, direction) {
