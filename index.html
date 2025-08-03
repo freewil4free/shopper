@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Supermarket Product Data</title>
+    <title>Supermarket Shopper</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -38,13 +38,13 @@
     </style>
 </head>
 <body>
-    <h1>Supermarket Product Data</h1>
+    <h1>Supermarket Shopper</h1>
     
     <div class="search-container">
         <input type="text" id="searchInput" placeholder="Search by Product Title...">
         <button id="searchbutton" onclick="loadandfind()">Search</button>
-        <button id="searchbutton" onclick="resetrows()">Reset rows</button>
-        <button id="searchbutton" onclick="loadDataScript();loadCSVData()">all data</button>
+        <button id="resetbutton" onclick="resetrows()">Reset rows</button>
+        <button id="loadbutton" onclick="loadDataScript();loadCSVData()">all data</button>
 
     </div>
     
@@ -55,7 +55,7 @@
         </select>
     </div> 
     
-    <div id="loadingMessage" style="display: none; font-weight: bold; color: red;">Loading CSV data...</div>
+    <div id="loadingMessage" style="display: none; font-weight: bold; color: red;">Loading product data...</div>
 
     <table id="productTable">
         <thead>
@@ -64,7 +64,7 @@
                 <th>Category <span class="sort-icon">↕</span></th>
                 <th>Product Title <span class="sort-icon">↕</span></th>
                 <th>Price ($) <span class="sort-icon">↕</span></th>
-                <th>$ per KG/L <span class="sort-icon">↕</span></th>
+                <th>$ per KG/L/piece <span class="sort-icon">↕</span></th>
                 <!-- <th>Unit Price ($) <span class="sort-icon">↕</span></th>
                 <th>Per unit <span class="sort-icon">↕</span></th>
                 <th>Product URL</th> -->
@@ -76,10 +76,6 @@
     </table>
 
     <script>
-        //fetch csv data once page loads
-        document.addEventListener("DOMContentLoaded", function () {
-            loaddata();
-        });
         async function loaddata() {
             try {
                 await loadDataScript();
@@ -92,15 +88,15 @@
         }
         async function loadandfind() {
             const input = document.getElementById("searchInput");
-            const filter = input.value.toUpperCase();
-            console.log('search value:',filter);
-            if (filter === "") {
+            const searchvalue = input.value;
+            console.log('search value:',searchvalue);
+            if (searchvalue === "") {
                 resetrows();
                 return;
                 }
             else {
-                resetfilter();
-                searchTable();
+                await loadDataScript();
+                await loadCSVData(searchvalue);
                 updateCategoryFilter();
                 columnhide();
             //catch (err) {
@@ -278,12 +274,14 @@
             const loadingDiv = document.getElementById("loadingMessage");
             loadingDiv.style.display = 'block';
             const table = document.getElementById("tableBody");
-            const rows = Array.from(table.getElementsByTagName("tr")).filter(row1 => {
+            const allrows = Array.from(table.getElementsByTagName("tr"))
+            const rows = allrows.filter(row1 => {
                 return window.getComputedStyle(row1).display !== "none";
             });
             let sortDirection = table.dataset.sortDirection || "asc";
             let sortColumn = table.dataset.sortColumn || -1;
-
+            
+            console.log(`All rows: ${allrows.length}`);
             console.log(`Visible rows: ${rows.length}`);
             console.log(`Before toggle: column=${sortColumn}, direction=${sortDirection}`);
 
