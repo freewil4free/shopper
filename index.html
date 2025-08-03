@@ -64,9 +64,10 @@
                 <th>Category <span class="sort-icon">↕</span></th>
                 <th>Product Title <span class="sort-icon">↕</span></th>
                 <th>Price ($) <span class="sort-icon">↕</span></th>
-                <th>Unit Price ($) <span class="sort-icon">↕</span></th>
+                <th>$ per KG/L <span class="sort-icon">↕</span></th>
+                <!-- <th>Unit Price ($) <span class="sort-icon">↕</span></th>
                 <th>Per unit <span class="sort-icon">↕</span></th>
-                <th>Product URL</th>
+                <th>Product URL</th> -->
             </tr>
         </thead>
         <tbody id="tableBody">
@@ -75,10 +76,16 @@
     </table>
 
     <script>
+        //fetch csv data once page loads
+        document.addEventListener("DOMContentLoaded", function () {
+            loaddata();
+        });
         async function loaddata() {
             try {
                 await loadDataScript();
                 await loadCSVData(); // Only if this is async, otherwise remove 'await'
+                resetrows();
+                columnhide();
             } catch (err) {
                 console.error("Failed to load and search:", err);
             }
@@ -86,14 +93,12 @@
         async function loadandfind() {
             const input = document.getElementById("searchInput");
             const filter = input.value.toUpperCase();
-            console.log(filter);
+            console.log('search value:',filter);
             if (filter === "") {
                 resetrows();
                 return;
                 }
             else {
-                await loadDataScript();
-                await loadCSVData(); // Only if this is async, otherwise remove 'await'
                 resetfilter();
                 searchTable();
                 updateCategoryFilter();
@@ -130,8 +135,8 @@
                 const cells = rows[i].getElementsByTagName("td");
                 let shouldShow = false;
                 
-                // Search across multiple columns (Supermarket, Category, Product Title)
-                for (let j = 0; j < 3; j++) {
+                // Search across the 3rd column ( Product Title). change j value to add more columns to search
+                for (let j = 2; j < 3; j++) {
                     if (cells[j]) {
                         const txtValue = cells[j].textContent || cells[j].innerText;
                         if (txtValue.toUpperCase().includes(filter)) {
@@ -209,13 +214,11 @@
             }
         }
 
-        //hide Category and URL column after searching or filtering results
+        //hide Category column
         function columnhide() {
             document.querySelectorAll("table tr").forEach(row => {
                 const categorycell1 = row.children[1]; // index 1 = 2nd column which is category column
-                const categorycell2 = row.children[6]; // index 6 = 6th column which is URL column
                 if (categorycell1) categorycell1.style.display = "none"; //hide category column
-                if (categorycell2) categorycell2.style.display = "none"
             });
         }
 
@@ -229,11 +232,18 @@
             }
             console.log('removed', (removecount), 'unique categories');
         }
-
+        //Reset rows. sets the display of each row to none
         function resetrows() {
+            const input = document.getElementById("searchInput");
             const table = document.getElementById("tableBody");
-            table.innerHTML = ''
-            console.log('cleared table rows')
+            const rows = table.getElementsByTagName("tr");
+            
+            for (let i = 0; i < rows.length; i++) {
+                const cells = rows[i].getElementsByTagName("td");
+                rows[i].style.display = "none";
+            }
+            //table.innerHTML = '' // replaces all data with empty strings [not used currently]
+            console.log('reset table rows')
         }
 
         // Sort function
