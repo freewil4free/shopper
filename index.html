@@ -124,30 +124,57 @@
         }
 
         // Search function
+        // Basic Levenshtein distance implementation
+        function levenshteinDistance(a, b) {
+            const dp = Array.from({ length: a.length + 1 }, () => Array(b.length + 1).fill(0));
+            for (let i = 0; i <= a.length; i++) dp[i][0] = i;
+            for (let j = 0; j <= b.length; j++) dp[0][j] = j;
+
+            for (let i = 1; i <= a.length; i++) {
+                for (let j = 1; j <= b.length; j++) {
+                    dp[i][j] = Math.min(
+                        dp[i - 1][j] + 1, // delete
+                        dp[i][j - 1] + 1, // insert
+                        dp[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1) // replace
+                    );
+                }
+            }
+            return dp[a.length][b.length];
+        }
+
+        function isFuzzyMatch(needle, haystack, threshold = 2) {
+            return levenshteinDistance(needle, haystack) <= threshold;
+        }
+
+        //perform search function
         function searchTable() {
-            console.log('beginning search')
+            console.log('beginning search');
             const input = document.getElementById("searchInput");
-            const filter = input.value.toUpperCase();
+            const filterWords = input.value.trim().toUpperCase().split(/\s+/);
             const table = document.getElementById("tableBody");
             const rows = table.getElementsByTagName("tr");
 
             for (let i = 0; i < rows.length; i++) {
                 const cells = rows[i].getElementsByTagName("td");
-                let shouldShow = false;
-                
-                // Search across the 3rd column ( Product Title). change j value to add more columns to search
+                let cellText = "";
+
+                // Combine target searchable columns here (currently only column 2)
                 for (let j = 2; j < 3; j++) {
                     if (cells[j]) {
-                        const txtValue = cells[j].textContent || cells[j].innerText;
-                        if (txtValue.toUpperCase().includes(filter)) {
-                            shouldShow = true;
-                            break;
-                        }
+                        cellText += (cells[j].textContent || cells[j].innerText).toUpperCase() + " ";
                     }
                 }
-                
-                rows[i].style.display = shouldShow ? "" : "none";
+
+                // Check that every word is in the cell text (exact or fuzzy match)
+                const allMatch = filterWords.every(word => {
+                    return cellText.split(/\s+/).some(token => 
+                        token.includes(word) || isFuzzyMatch(word, token)
+                    );
+                });
+
+                rows[i].style.display = allMatch ? "" : "none";
             }
+
             console.log('Searched table');
         }
 
@@ -327,13 +354,7 @@
 
             });
 
-            // Add debounce to search input (i.e. immediately start searching after input value changes)
-            //const searchInput = document.getElementById('searchInput');
-            //let searchTimeout;
-            //searchInput.addEventListener('input', () => {
-               // clearTimeout(searchTimeout);
-               // searchTimeout = setTimeout(searchTable, 300);
-            //});
+            // Listen for enter key after search words are typed
             document.getElementById('searchInput').addEventListener('keydown', function (event) {
                 if (event.key === 'Enter') {
                     event.preventDefault(); // prevent form submission if inside a form
