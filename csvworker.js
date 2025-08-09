@@ -31,7 +31,22 @@ function fuzzyMatchTokens(str, searchWords) {
 
 self.onmessage = (e) => {
     const { csvText, filter } = e.data;
-    const searchWords = filter.trim().toLowerCase().split(/\s+/).filter(Boolean);
+
+    // Match quoted phrases OR single words
+    const regex = /"([^"]+)"|(\S+)/g;
+    const searchWords = [];
+    const exactPhrases = [];
+
+    let match;
+    while ((match = regex.exec(filter)) !== null) {
+        if (match[1]) {
+            // Quoted phrase (exact match mode)
+            exactPhrases.push(match[1].toLowerCase());
+        } else if (match[2]) {
+            // Normal search term (fuzzy match mode)
+            searchWords.push(match[2].toLowerCase());
+        }
+    }
 
     const rows = csvText.trim().split('\n');
     const filtered = [];
@@ -39,11 +54,20 @@ self.onmessage = (e) => {
     for (let i = 1; i < rows.length; i++) {
         const cols = rows[i].split(',');
         const searchable = [cols[0], cols[1], cols[2]].join(' ').toLowerCase();
+
+        // Check quoted phrases (exact match, whole word)
+        const exactMatchOK = exactPhrases.every(phrase =>
+            new RegExp(`\\b${phrase}\\b`).test(searchable)
+        );
+
+        // Check fuzzy terms
         const matchedTokens = fuzzyMatchTokens(searchable, searchWords);
-        if (matchedTokens) {
+
+        if (exactMatchOK && (searchWords.length === 0 || matchedTokens)) {
             filtered.push({ row: cols, highlights: [...new Set(matchedTokens)] });
         }
     }
+
     console.log(filtered.length, 'rendered rows');
     postMessage(filtered);
 };
