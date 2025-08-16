@@ -19,7 +19,7 @@ async function loadCSVData(searchvalue = "") {
 
         rows.forEach(({ row: cols, highlights }) => {
             const tr = document.createElement("tr");
-            const skipindex = [5, 6, 7];
+            const skipindex = [6, 7, 8];
 
             cols.forEach((col, index) => {
                 if (skipindex.includes(index)) return;
@@ -27,14 +27,25 @@ async function loadCSVData(searchvalue = "") {
                 const td = document.createElement("td");
                 let content = col.trim();
 
-                if (index === 2) {
+                if (index === 0) {
                     const a = document.createElement("a");
-                    a.href = cols[7];
+                    const urlObj = new URL(cols[8]);  // find only the base domain of the URL
+                    a.href = urlObj.origin; // Assign only base domain
                     a.target = "_blank";
-                    content = `${cols[2]} ($${cols[5]}/${cols[6]})`;
+                    content = cols[0];
                     a.innerHTML = highlightTerms(content, highlights);
                     td.appendChild(a);
-                } else {
+                }
+
+                else if (index === 2) {
+                    const a = document.createElement("a");
+                    a.href = cols[8];
+                    a.target = "_blank";
+                    content = `${cols[2]} ($${cols[6]}/${cols[7]})`;
+                    a.innerHTML = highlightTerms(content, highlights);
+                    td.appendChild(a);
+                } 
+                else {
                     td.innerHTML = highlightTerms(content, highlights);
                 }
 

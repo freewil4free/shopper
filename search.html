@@ -45,7 +45,6 @@
         <button id="searchbutton" onclick="loadandfind()">Search</button>
         <button id="resetbutton" onclick="resetrows()" style="display:none">Reset</button>
         <button id="loadbutton" onclick="loadDataScript();loadCSVData()" style="display:none">all data</button>
-
     </div>
     
     <div class="category-container">
@@ -64,7 +63,8 @@
                 <th>Category <span class="sort-icon">↕</span></th>
                 <th>Product Title <span class="sort-icon">↕</span></th>
                 <th>Price ($) <span class="sort-icon">↕</span></th>
-                <th>$ per KG/L/piece <span class="sort-icon">↕</span></th>
+                <th>$ per KG/L <span class="sort-icon">↕</span></th>
+                <th>$ per piece <span class="sort-icon">↕</span></th>                
                 <!-- <th>Unit Price ($) <span class="sort-icon">↕</span></th>
                 <th>Per unit <span class="sort-icon">↕</span></th>
                 <th>Product URL</th> -->
@@ -138,7 +138,7 @@
             return dp[a.length][b.length];
         }
 
-        function isFuzzyMatch(needle, haystack, threshold = 2) {
+        function isFuzzyMatch(needle, haystack, threshold = 1) {
             return levenshteinDistance(needle, haystack) <= threshold;
         }
 

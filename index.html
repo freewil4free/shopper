@@ -11,7 +11,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: white;
+        background: rgb(240, 240, 240);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -25,6 +25,7 @@
         }
         body {
             font-family: Arial, sans-serif;
+            text-align: center;
             margin: 20px;
         }
     </style>
@@ -32,17 +33,17 @@
 <body>
     <!-- Cover overlay -->
     <div id="cover">
-    <h1>Welcome</h1>
-    <button onclick="enterSite()">Enter</button>
-    <p style="text-align: center;"><br> When ready, click to load the search service.</p> 
-    <p style="text-align: center;"> The service will also load certain supermarket homepages as new tabs in the background to help product browsing later.</p>
+    <h1>Welcome to Supermarket Shopper</h1>
+    <h4><i>Compare grocery prices easily among the major supermarkets (Aldi, Coles, Woolworths).</i></h4>
+    <button onclick="enterSite()">Get started</button>
+    <p><br>NOTE: If you are havin trouble accessing a certain product's URL page, try loading the supermarket's homepage first (e.g. <a href="https://www.coles.com.au/" target=_blank>https://www.coles.com.au/)</a> with javascripts/cookies/cache data enabled via a separate browser tab. This may help preload the data deemed necessary by the supermarket before allowing you to navigate their website. You only need to load their homepage once per session.</p>
     </div>
 
 <script>
 function enterSite() {
 // 1. Open the other URL in a new tab (will only work reliably on user click)
-window.open("https://www.coles.com.au", "_self");
-window.open("search.html", "_blank");
+//window.open("https://www.coles.com.au", "_self");
+window.open("search.html", "_self");
 }
 </script>
 </body>
