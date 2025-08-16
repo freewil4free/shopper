@@ -18,13 +18,26 @@ function fuzzyMatchTokens(str, searchWords) {
     const tokens = text.split(/\s+/);
     const matched = [];
 
-    const allMatched = searchWords.every(word =>
-        tokens.some(token => {
-            const isMatch = token.includes(word) || levenshtein(token, word) <= 1;
-            if (isMatch) matched.push(token);
+    const allMatched = searchWords.every(word => {
+        // For each search word, find at least one token that:
+        // 1. Starts with the same first letter as the search word
+        // 2. Has a good fuzzy match for the rest of the word
+        return tokens.some(token => {
+            // Check if the first character matches exactly
+            if (!token || !word || token[0] !== word[0]) {
+                return false;
+            }
+            
+            // For the rest of the characters, use fuzzy matching
+            // We'll use a modified approach that's stricter than the original
+            const isMatch = levenshtein(token.substring(1), word.substring(1)) <= 1;
+            
+            if (isMatch) {
+                matched.push(token);
+            }
             return isMatch;
-        })
-    );
+        });
+    });
 
     return allMatched ? matched : null;
 }
