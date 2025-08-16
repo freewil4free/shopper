@@ -307,8 +307,24 @@
                 
                 // Numeric comparison for price columns (index 3,4,5)
                 if ([3,4,5].includes(columnIndex)) {
+                    // Check for blank values and put them at the bottom
+                    const aIsBlank = aValue === "" || aValue.trim() === "";
+                    const bIsBlank = bValue === "" || bValue.trim() === "";
+                    
+                    // If both are blank or both are non-blank, compare normally
+                    if (aIsBlank && bIsBlank) return 0;
+                    if (aIsBlank) return 1;  // a is blank, put it at the bottom
+                    if (bIsBlank) return -1; // b is blank, put it at the bottom
+                    
+                    // Both are non-blank, compare numerically
                     const aNum = parseFloat(aValue.replace(/[^0-9.-]/g, ''));
                     const bNum = parseFloat(bValue.replace(/[^0-9.-]/g, ''));
+                    
+                    // Handle non-numeric values (NaN) by putting them at the bottom
+                    if (isNaN(aNum) && isNaN(bNum)) return 0;
+                    if (isNaN(aNum)) return 1;
+                    if (isNaN(bNum)) return -1;
+                    
                     return sortDirection === "asc" ? aNum - bNum : bNum - aNum;
                 }
                 
