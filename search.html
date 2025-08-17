@@ -290,16 +290,29 @@
         }
         
         function updateSortIndicators(buttonid, direction) {
+            //reset all sort icons
             const headers = document.querySelectorAll('button span.sort-icon');
-            console.log('header: ',headers)
             headers.forEach(span => span.textContent = '↕');
             
-            const activeHeader = document.querySelector(`button[id=${buttonid}] span.sort-icon`);
-            if (activeHeader) {
-                activeHeader.textContent = direction === "asc" ? "↑" : "↓";
-                activeHeader.style.fontWeight = "bold";
+            //update active sort icon
+            const activesorticon = document.querySelector(`button[id=${buttonid}] span.sort-icon`);
+            if (activesorticon) {
+                activesorticon.textContent = direction === "asc" ? "↑" : "↓";
+                activesorticon.style.fontWeight = "bold";
+            }
+            
+            //reset style of all sort buttons
+            const sorttext = document.querySelectorAll('div.sort-container button');
+            sorttext.forEach(btntext => {btntext.style.fontWeight = "normal"});
+            
+            //update style of the active sort button
+            const activesort = document.querySelector(`button[id=${buttonid}]`);
+            if (activesort) {
+                activesort.style.fontWeight = "bold";
             }
         }
+
+
 
         function isNumeric(str) {
             return !isNaN(str) && !isNaN(parseFloat(str));
@@ -328,15 +341,6 @@
             // Add event listener for category filter
             document.getElementById('categoryFilter').addEventListener('change', filterByCategory);
         });
-
-        // Helper function to reset search and sorting
-        function resetTableFilters() {
-            document.getElementById('searchInput').value = '';
-            document.querySelectorAll('#tableBody tr').forEach(tr => {
-                tr.style.display = '';
-            });
-            updateSortIndicators(-1, 'asc');
-        }
 
     </script>
 </body>
