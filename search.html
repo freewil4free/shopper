@@ -29,7 +29,7 @@
         .search-container {
             margin-bottom: 20px;
         }
-        .category-container {
+        .sortfilter-container {
             margin-bottom: 20px
         }
         .sort-icon {
@@ -38,7 +38,7 @@
     </style>
 </head>
 <body>
-    <h1>Supermarket Shopper</h1>
+    <h1 style="text-align: center">Supermarket Shopper</h1>
     
     <div class="search-container">
         <input type="text" id="searchInput" placeholder="Search for products...">
@@ -47,10 +47,13 @@
         <button id="loadbutton" onclick="loadDataScript();loadCSVData()" style="display:none">all data</button>
     </div>
     
-    <div class="category-container">
+    <div class="sortfilter-container">
         <select id="categoryFilter">
             <option value="All">Show all categories</option>
         </select>
+            <button id="sortprice" onclick="sortTable(columnIndex=3,buttonid='sortprice')">Price<span class="sort-icon" style="font-weight: bold">↕</span></button>
+            <button id="sortunitprice" onclick="sortTable(columnIndex=4,buttonid='sortunitprice')">$ per KG/L<span class="sort-icon" style="font-weight: bold">↕</span></button>
+            <button id="sortpieceprice" onclick="sortTable(columnIndex=5,buttonid='sortpieceprice')">$ per piece<span class="sort-icon" style="font-weight: bold">↕</span></button>
     </div> 
     
     <div id="loadingMessage" style="display: none; font-weight: bold; color: red;">Loading product data...</div>
@@ -58,15 +61,12 @@
     <table id="productTable">
         <thead>
             <tr>
-                <th>Supermarket <span class="sort-icon">↕</span></th>
+                <th>Supermarket | Category<span class="sort-icon">↕</span></th>
                 <th>Category <span class="sort-icon">↕</span></th>
                 <th>Product Title <span class="sort-icon">↕</span></th>
                 <th>Price ($) <span class="sort-icon">↕</span></th>
                 <th>$ per KG/L <span class="sort-icon">↕</span></th>
                 <th>$ per piece <span class="sort-icon">↕</span></th>                
-                <!-- <th>Unit Price ($) <span class="sort-icon">↕</span></th>
-                <th>Per unit <span class="sort-icon">↕</span></th>
-                <th>Product URL</th> -->
             </tr>
         </thead>
         <tbody id="tableBody">
@@ -75,17 +75,6 @@
     </table>
 
     <script>
-        async function loaddata() {
-            try {
-                await loadDataScript();
-                await loadCSVData(); // Only if this is async, otherwise remove 'await'
-                updateCategoryFilter();
-                resetrows();
-                columnhide();
-            } catch (err) {
-                console.error("Failed to load and search:", err);
-            }
-        }
         async function loadandfind() {
             const input = document.getElementById("searchInput");
             const searchvalue = input.value;
@@ -97,6 +86,7 @@
             else {
                 await loadDataScript();
                 await loadCSVData(searchvalue);
+                resetfilter();
                 updateCategoryFilter();
                 columnhide();
             //catch (err) {
@@ -189,7 +179,9 @@
         function columnhide() {
             document.querySelectorAll("table tr").forEach(row => {
                 const categorycell1 = row.children[1]; // index 1 = 2nd column which is category column
+                const pricecell1 = row.children[3]; // index 4 = 4th column which is price column
                 if (categorycell1) categorycell1.style.display = "none"; //hide category column
+                if (pricecell1) pricecell1.style.display = "none"; //hide price column
             });
         }
 
@@ -219,6 +211,7 @@
 
         // Sort function
         function sortTable(columnIndex) {
+            console.log('buttonid=',buttonid)
             const loadingDiv = document.getElementById("loadingMessage");
             loadingDiv.style.display = 'block';
             const table = document.getElementById("tableBody");
@@ -286,17 +279,19 @@
             rows.forEach(row => table.appendChild(row));
             
             // Update sort indicators
-            updateSortIndicators(columnIndex, sortDirection);
+            updateSortIndicators(buttonid, sortDirection);
             loadingDiv.style.display = 'none';
         }
         
-        function updateSortIndicators(columnIndex, direction) {
-            const headers = document.querySelectorAll('th span.sort-icon');
+        function updateSortIndicators(buttonid, direction) {
+            const headers = document.querySelectorAll('button span.sort-icon');
+            console.log('header: ',headers)
             headers.forEach(span => span.textContent = '↕');
             
-            const activeHeader = document.querySelector(`th:nth-child(${columnIndex + 1}) span.sort-icon`);
+            const activeHeader = document.querySelector(`button[id=${buttonid}] span.sort-icon`);
             if (activeHeader) {
                 activeHeader.textContent = direction === "asc" ? "↑" : "↓";
+                activeHeader.style.fontWeight = "bold";
             }
         }
 

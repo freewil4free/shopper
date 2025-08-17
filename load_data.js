@@ -32,7 +32,7 @@ async function loadCSVData(searchvalue = "") {
                     const urlObj = new URL(cols[8]);  // find only the base domain of the URL
                     a.href = urlObj.origin; // Assign only base domain
                     a.target = "_blank";
-                    content = cols[0];
+                    content = `${cols[0]} | ${cols[1]}`;
                     a.innerHTML = highlightTerms(content, highlights);
                     td.appendChild(a);
                 }
@@ -46,8 +46,10 @@ async function loadCSVData(searchvalue = "") {
                     td.appendChild(a);
                     // add text outside of the hyperlink
                     td.appendChild(document.createElement("br"));
-                    const b = `${cols[1]} | $${cols[3]} ($${cols[6]}/${cols[7]}) ${cols[9]}`;
+                    const b = `$${cols[3]} ($${cols[6]}/${cols[7]})`;
                     td.appendChild(document.createTextNode(b));
+                    td.appendChild(document.createElement("br"));
+                    td.appendChild(document.createTextNode(cols[9]));
                 } 
                 else {
                     td.innerHTML = highlightTerms(content, highlights);
