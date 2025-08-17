@@ -41,16 +41,15 @@
     <h1>Supermarket Shopper</h1>
     
     <div class="search-container">
-        <input type="text" id="searchInput" placeholder="Search by Product Title...">
+        <input type="text" id="searchInput" placeholder="Search for products...">
         <button id="searchbutton" onclick="loadandfind()">Search</button>
         <button id="resetbutton" onclick="resetrows()" style="display:none">Reset</button>
         <button id="loadbutton" onclick="loadDataScript();loadCSVData()" style="display:none">all data</button>
     </div>
     
     <div class="category-container">
-        <label for="categoryFilter">Filter by Category:</label>
         <select id="categoryFilter">
-            <option value="All">All Categories</option>
+            <option value="All">Show all categories</option>
         </select>
     </div> 
     
@@ -80,6 +79,7 @@
             try {
                 await loadDataScript();
                 await loadCSVData(); // Only if this is async, otherwise remove 'await'
+                updateCategoryFilter();
                 resetrows();
                 columnhide();
             } catch (err) {
@@ -119,61 +119,6 @@
             });
         }
 
-        // Search function
-        // Basic Levenshtein distance implementation
-        function levenshteinDistance(a, b) {
-            const dp = Array.from({ length: a.length + 1 }, () => Array(b.length + 1).fill(0));
-            for (let i = 0; i <= a.length; i++) dp[i][0] = i;
-            for (let j = 0; j <= b.length; j++) dp[0][j] = j;
-
-            for (let i = 1; i <= a.length; i++) {
-                for (let j = 1; j <= b.length; j++) {
-                    dp[i][j] = Math.min(
-                        dp[i - 1][j] + 1, // delete
-                        dp[i][j - 1] + 1, // insert
-                        dp[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1) // replace
-                    );
-                }
-            }
-            return dp[a.length][b.length];
-        }
-
-        function isFuzzyMatch(needle, haystack, threshold = 1) {
-            return levenshteinDistance(needle, haystack) <= threshold;
-        }
-
-        //perform search function
-        function searchTable() {
-            console.log('beginning search');
-            const input = document.getElementById("searchInput");
-            const filterWords = input.value.trim().toUpperCase().split(/\s+/);
-            const table = document.getElementById("tableBody");
-            const rows = table.getElementsByTagName("tr");
-
-            for (let i = 0; i < rows.length; i++) {
-                const cells = rows[i].getElementsByTagName("td");
-                let cellText = "";
-
-                // Combine target searchable columns here (currently only column 2)
-                for (let j = 2; j < 3; j++) {
-                    if (cells[j]) {
-                        cellText += (cells[j].textContent || cells[j].innerText).toUpperCase() + " ";
-                    }
-                }
-
-                // Check that every word is in the cell text (exact or fuzzy match)
-                const allMatch = filterWords.every(word => {
-                    return cellText.split(/\s+/).some(token => 
-                        token.includes(word) || isFuzzyMatch(word, token)
-                    );
-                });
-
-                rows[i].style.display = allMatch ? "" : "none";
-            }
-
-            console.log('Searched table');
-        }
-
         // Extract unique categories and update filter dropdown
         function updateCategoryFilter() {
             const table = document.getElementById("tableBody");
@@ -210,18 +155,21 @@
 
         // Filter table rows by selected category
         function filterByCategory() {
-            searchTable();
+            //searchTable();
             const categoryFilter = document.getElementById("categoryFilter");
             const selectedCategory = categoryFilter.value;
             const table = document.getElementById("tableBody");
             const rows = table.getElementsByTagName("tr");
+            for (let i = 0; i < rows.length; i++) {
+            rows[i].style.display = "";
+            }
+            for (let i = 0; i < rows.length; i++) {
             // If "All Categories" is selected, show all rows that are already visible
             if (selectedCategory === "All") {
                 return;
             }
             
             // Filter by specific category
-            for (let i = 0; i < rows.length; i++) {
                 const categoryCell = rows[i].getElementsByTagName("td")[1]; // Category is 2nd column
                 if (categoryCell) {
                     const categoryValue = categoryCell.textContent.trim();

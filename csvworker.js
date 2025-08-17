@@ -49,6 +49,7 @@ self.onmessage = (e) => {
     const regex = /"([^"]+)"|(\S+)/g;
     const searchWords = [];
     const exactPhrases = [];
+    const excludeTerms = [];
 
     let match;
     while ((match = regex.exec(filter)) !== null) {
@@ -56,8 +57,14 @@ self.onmessage = (e) => {
             // Quoted phrase (exact match mode)
             exactPhrases.push(match[1].toLowerCase());
         } else if (match[2]) {
-            // Normal search term (fuzzy match mode)
-            searchWords.push(match[2].toLowerCase());
+            // Check for negative terms (prefixed with -)
+            const term = match[2].toLowerCase();
+            if (term.startsWith('-') && term.length > 1) {
+                excludeTerms.push(term.substring(1));
+            } else {
+                // Normal search term (fuzzy match mode)
+                searchWords.push(term);
+            }
         }
     }
 
@@ -76,7 +83,10 @@ self.onmessage = (e) => {
         // Check fuzzy terms
         const matchedTokens = fuzzyMatchTokens(searchable, searchWords);
 
-        if (exactMatchOK && (searchWords.length === 0 || matchedTokens)) {
+        // Check exclude terms (exact match, no fuzzy logic)
+        const excludeMatch = excludeTerms.some(term => searchable.includes(term));
+
+        if (exactMatchOK && (searchWords.length === 0 || matchedTokens) && !excludeMatch) {
             filtered.push({ row: cols, highlights: [...new Set(matchedTokens)] });
         }
     }
@@ -84,3 +94,4 @@ self.onmessage = (e) => {
     console.log(filtered.length, 'rendered rows');
     postMessage(filtered);
 };
+

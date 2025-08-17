@@ -19,7 +19,7 @@ async function loadCSVData(searchvalue = "") {
 
         rows.forEach(({ row: cols, highlights }) => {
             const tr = document.createElement("tr");
-            const skipindex = [6, 7, 8];
+            const skipindex = [6, 7, 8, 9];
 
             cols.forEach((col, index) => {
                 if (skipindex.includes(index)) return;
@@ -41,9 +41,13 @@ async function loadCSVData(searchvalue = "") {
                     const a = document.createElement("a");
                     a.href = cols[8];
                     a.target = "_blank";
-                    content = `${cols[2]} ($${cols[6]}/${cols[7]})`;
+                    content = `${cols[2]}`;
                     a.innerHTML = highlightTerms(content, highlights);
                     td.appendChild(a);
+                    // add text outside of the hyperlink
+                    td.appendChild(document.createElement("br"));
+                    const b = `${cols[1]} | $${cols[3]} ($${cols[6]}/${cols[7]}) ${cols[9]}`;
+                    td.appendChild(document.createTextNode(b));
                 } 
                 else {
                     td.innerHTML = highlightTerms(content, highlights);
